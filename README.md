@@ -7,23 +7,24 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Doelgroep
 - Wat moet er geprint worden?
 - Specifieke styling print-css
+- Sanne's voorbeeld, wat wilt u hier mee?
+- Hoe/Wanneer/Waar bent u bereikbaar?
+- Wat verwacht u van de gebruiker?
+- Wat is uw doel met de website?
 
----
 
 ## De opdracht:
 Hier wordt de opdracht in korte punten verwoord.
 - Maak een gids voor 50 uitgekozen AI kunstenaars en hun kunst. Probeer dit interactief te maken.
 - Gebruik
-- Wordpress (Eigen Thema)
-- Vast font (Welke is dit?)
+- Wordpress(?) (Eigen Thema)
+- Vast font
 
----
 
 ## Team Links
 
 - [Trello Board](https://trello.com/b/LMfLQpmA/meesterproef)
 
----
 
 ## Bronnen
 
