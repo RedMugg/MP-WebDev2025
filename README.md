@@ -8,6 +8,7 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Wat moet er geprint worden?
 - Specifieke styling print-css
 
+- [Font: Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
 
 
 ## De opdracht:
@@ -16,4 +17,5 @@ Hier wordt de opdracht in korte punten verwoord.
 - Gebruik
 - Wordpress (Eigen Thema)
 - Vast font (Welke is dit?)
+
 
