@@ -1,5 +1,5 @@
 # Artelligence | MP-WebDev2025
-## Debrief 1:
+## Eerste meeting:
 Vragen die wij willen stellen tijdens de eerste debrief.
 - Wordpress toegang en wat hebben ze al staan?
 - Huisstijl
@@ -8,8 +8,7 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Wat moet er geprint worden?
 - Specifieke styling print-css
 
-- [Font: Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
-
+---
 
 ## De opdracht:
 Hier wordt de opdracht in korte punten verwoord.
@@ -18,4 +17,15 @@ Hier wordt de opdracht in korte punten verwoord.
 - Wordpress (Eigen Thema)
 - Vast font (Welke is dit?)
 
+---
+
+## Team Links
+
+- [Trello Board](https://trello.com/b/LMfLQpmA/meesterproef)
+
+---
+
+## Bronnen
+
+- [Font: Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
 
