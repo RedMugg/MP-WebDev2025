@@ -12,6 +12,8 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Wat verwacht u van de gebruiker?
 - Wat is uw doel met de website?
 - Wat moet er met filmpjes/animaties gebeuren wanneer er geprint wordt?
+- Headless WP - Liquid of standaard PHP
+- Iets over AI maken
 
 
 ## De opdracht:
