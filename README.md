@@ -14,6 +14,7 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Wat moet er met filmpjes/animaties gebeuren wanneer er geprint wordt?
 - Headless WP - Liquid of standaard PHP
 - Iets over AI maken
+- Over pagina's
 
 
 ## De opdracht:
