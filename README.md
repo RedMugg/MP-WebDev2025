@@ -19,6 +19,8 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Iets over AI maken
 - Over pagina's
 
+### Notes eerste gesprek:
+- 
 
 ### De opdracht:
 Hier wordt de opdracht in korte punten verwoord.
