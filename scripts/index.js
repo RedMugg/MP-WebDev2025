@@ -19,11 +19,13 @@ function fetchArtists() {
             dataFilter.forEach(dataFilter => {
                 var artistName = dataFilter.ARTIST;
                 var artName = dataFilter.ARTWORK_NAME;
+                var artistLink = dataFilter.LINK;
 
                 artList.insertAdjacentHTML("beforeend", `
                 <li>
                 <h1>` + artName +`</h1>
                 <h2>` + artistName + `</h2>
+                <a href="` + artistLink + `">Website</a>
                 </li>`);
             });
 
