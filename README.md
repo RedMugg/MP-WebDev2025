@@ -1,5 +1,8 @@
 # Artelligence | MP-WebDev2025
-## Eerste meeting:
+
+## Week 1:
+
+### Eerste meeting:
 Vragen die wij willen stellen tijdens de eerste debrief.
 - Wordpress toegang en wat hebben ze al staan?
 - Huisstijl
@@ -17,7 +20,7 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Over pagina's
 
 
-## De opdracht:
+### De opdracht:
 Hier wordt de opdracht in korte punten verwoord.
 - Maak een gids voor 50 uitgekozen AI kunstenaars en hun kunst. Probeer dit interactief te maken.
 - Gebruik
