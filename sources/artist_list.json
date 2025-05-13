@@ -1,7 +1,7 @@
 [
     {
         "ARTIST": "Arvida Byström",
-        "ARTWORK NAME": "(name of project unknown)",
+        "ARTWORK_NAME": "(name of project unknown)",
         "LINK": "https://www.instagram.com/p/C5OCB_DNhN-/?utm_source=ig_web_copy_link",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -12,7 +12,7 @@
     },
     {
         "ARTIST": "Eryk Salvaggio",
-        "ARTWORK NAME": "Moth Glitch' OR 'Extraction'",
+        "ARTWORK_NAME": "Moth Glitch' OR 'Extraction'",
         "LINK": "https://www.cyberneticforests.com/online-portfolio",
         "FORMAT": "Image / sound",
         "PROJECT / EXERCISE NAME": "",
@@ -23,7 +23,7 @@
     },
     {
         "ARTIST": "Holly Herndon + Mat Dryhurst",
-        "ARTWORK NAME": "The Call",
+        "ARTWORK_NAME": "The Call",
         "LINK": "https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/",
         "FORMAT": "Image / Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -34,7 +34,7 @@
     },
     {
         "ARTIST": "Jon Rafman",
-        "ARTWORK NAME": "Main Stream Media Network",
+        "ARTWORK_NAME": "Main Stream Media Network",
         "LINK": "https://spruethmagers.com/exhibitions/jon-rafman-proof-of-concept-los-angeles/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -45,7 +45,7 @@
     },
     {
         "ARTIST": "K Allado-McDowell",
-        "ARTWORK NAME": "Pharmako-AI",
+        "ARTWORK_NAME": "Pharmako-AI",
         "LINK": "https://www.library.ignota.org/book/pharmako-ai/",
         "FORMAT": "Text",
         "PROJECT / EXERCISE NAME": "",
@@ -56,7 +56,7 @@
     },
     {
         "ARTIST": "Kira Xonorika",
-        "ARTWORK NAME": "AI Renders The World",
+        "ARTWORK_NAME": "AI Renders The World",
         "LINK": "https://www.instagram.com/xonorika/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -67,7 +67,7 @@
     },
     {
         "ARTIST": "Lauren McCarthy and Kyle McDonald",
-        "ARTWORK NAME": "Voice in my Head",
+        "ARTWORK_NAME": "Voice in my Head",
         "LINK": "https://lauren-mccarthy.com/Voice-In-My-Head",
         "FORMAT": "Text / Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -78,7 +78,7 @@
     },
     {
         "ARTIST": "Linda Dounia",
-        "ARTWORK NAME": "Once upon a garden",
+        "ARTWORK_NAME": "Once upon a garden",
         "LINK": "https://onceuponagarden.xyz/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -89,7 +89,7 @@
     },
     {
         "ARTIST": "Paul Trillo",
-        "ARTWORK NAME": "Washed Out \"\"The Hardest Parts\"\"",
+        "ARTWORK_NAME": "Washed Out \"\"The Hardest Parts\"\"",
         "LINK": "https://paultrillo.com/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -100,7 +100,7 @@
     },
     {
         "ARTIST": "Refik Anadol",
-        "ARTWORK NAME": "Machine Hallucinations series",
+        "ARTWORK_NAME": "Machine Hallucinations series",
         "LINK": "https://refikanadol.com/works/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -111,7 +111,7 @@
     },
     {
         "ARTIST": "Sarah Ciston",
-        "ARTWORK NAME": "Inner(voice)over",
+        "ARTWORK_NAME": "Inner(voice)over",
         "LINK": "https://sarahciston.com/IVO.html",
         "FORMAT": "Text / Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -122,7 +122,7 @@
     },
     {
         "ARTIST": "Sasha Stiles",
-        "ARTWORK NAME": "Four Core Texts",
+        "ARTWORK_NAME": "Four Core Texts",
         "LINK": "https://www.sashastiles.com/art",
         "FORMAT": "Text / Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -133,7 +133,7 @@
     },
     {
         "ARTIST": "Stephanie Dinkins",
-        "ARTWORK NAME": "Not the Only One",
+        "ARTWORK_NAME": "Not the Only One",
         "LINK": "https://www.stephaniedinkins.com/ntoo.html",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -144,7 +144,7 @@
     },
     {
         "ARTIST": "Trevor Paglen",
-        "ARTWORK NAME": "ImageNet Roulette",
+        "ARTWORK_NAME": "ImageNet Roulette",
         "LINK": "https://paglen.studio/2020/04/29/imagenet-roulette/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -155,7 +155,7 @@
     },
     {
         "ARTIST": "Hito Steyerl",
-        "ARTWORK NAME": "Power Plants",
+        "ARTWORK_NAME": "Power Plants",
         "LINK": "https://www.estherschipper.com/artists/102-hito-steyerl/works/22081/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -166,7 +166,7 @@
     },
     {
         "ARTIST": "Mashinka Firunts Hakopian",
-        "ARTWORK NAME": "One who looks at the cup",
+        "ARTWORK_NAME": "One who looks at the cup",
         "LINK": "https://mashinkafirunts.com/one-who-looks-at-the-cup-redcat/",
         "FORMAT": "Text / installation",
         "PROJECT / EXERCISE NAME": "",
@@ -177,7 +177,7 @@
     },
     {
         "ARTIST": "Mario Klingemann",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -188,7 +188,7 @@
     },
     {
         "ARTIST": "Alexey Yurenev",
-        "ARTWORK NAME": "Silent Hero",
+        "ARTWORK_NAME": "Silent Hero",
         "LINK": "https://www.yurenev.com/silent-hero-intro",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -199,7 +199,7 @@
     },
     {
         "ARTIST": "Clement Lambelet",
-        "ARTWORK NAME": "The Mathematics of Regression",
+        "ARTWORK_NAME": "The Mathematics of Regression",
         "LINK": "https://c-lambelet.com/en/projects/the-mathematics-of-regression/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -210,7 +210,7 @@
     },
     {
         "ARTIST": "Akosua Viktoria Adu-Sanyah",
-        "ARTWORK NAME": "Delirium",
+        "ARTWORK_NAME": "Delirium",
         "LINK": "https://akosuaviktoria.com/delirium",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -221,7 +221,7 @@
     },
     {
         "ARTIST": "Federico Díaz",
-        "ARTWORK NAME": "Boar",
+        "ARTWORK_NAME": "Boar",
         "LINK": "https://federicodiaz.net/",
         "FORMAT": "Scupture/ Robot",
         "PROJECT / EXERCISE NAME": "",
@@ -232,7 +232,7 @@
     },
     {
         "ARTIST": "Jake Elwes",
-        "ARTWORK NAME": "The Zizi show",
+        "ARTWORK_NAME": "The Zizi show",
         "LINK": "https://www.jakeelwes.com/project-zizi-show.html",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -243,7 +243,7 @@
     },
     {
         "ARTIST": "Brea Souders",
-        "ARTWORK NAME": "Another Online Pervert",
+        "ARTWORK_NAME": "Another Online Pervert",
         "LINK": "https://www.breasouders.com/new-page-3",
         "FORMAT": "Text / Image",
         "PROJECT / EXERCISE NAME": "",
@@ -254,7 +254,7 @@
     },
     {
         "ARTIST": "Qualeasha Wood",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "https://www.qualeasha.com/exhibitions/malware",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -265,7 +265,7 @@
     },
     {
         "ARTIST": "Morehshin Allayari",
-        "ARTWORK NAME": "ماه طلعت / Moon-faced",
+        "ARTWORK_NAME": "ماه طلعت / Moon-faced",
         "LINK": "https://morehshin.com/%D9%85%D8%A7%D9%87-%D8%B7%D9%84%D8%B9%D8%AA-moon-faced",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -276,7 +276,7 @@
     },
     {
         "ARTIST": "Nouf Aljowaysir",
-        "ARTWORK NAME": "Ana Min Wein (Where am I From)?",
+        "ARTWORK_NAME": "Ana Min Wein (Where am I From)?",
         "LINK": "https://channel.somersethouse.org.uk/artworks/all/ana-min-wein-where-am-i-from",
         "FORMAT": "Image / text",
         "PROJECT / EXERCISE NAME": "",
@@ -287,7 +287,7 @@
     },
     {
         "ARTIST": "Nora Al-Badri",
-        "ARTWORK NAME": "Babylonian Vision",
+        "ARTWORK_NAME": "Babylonian Vision",
         "LINK": "https://www.nora-al-badri.de/works-index",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -298,7 +298,7 @@
     },
     {
         "ARTIST": "",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -309,7 +309,7 @@
     },
     {
         "ARTIST": "",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -320,7 +320,7 @@
     },
     {
         "ARTIST": "Eveline Ypma",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -331,7 +331,7 @@
     },
     {
         "ARTIST": "Jeroen van der Most",
-        "ARTWORK NAME": "Letters from Nature",
+        "ARTWORK_NAME": "Letters from Nature",
         "LINK": "https://www.jeroenvandermost.com/letters-from-nature",
         "FORMAT": "Text",
         "PROJECT / EXERCISE NAME": "",
@@ -342,7 +342,7 @@
     },
     {
         "ARTIST": "Johan Nieuwenhuize",
-        "ARTWORK NAME": "The Bubble",
+        "ARTWORK_NAME": "The Bubble",
         "LINK": "https://www.johannieuwenhuize.nl/projects/the-bubble/",
         "FORMAT": "Images",
         "PROJECT / EXERCISE NAME": "",
@@ -353,7 +353,7 @@
     },
     {
         "ARTIST": "Rita Studio",
-        "ARTWORK NAME": "Consensus Machine",
+        "ARTWORK_NAME": "Consensus Machine",
         "LINK": "",
         "FORMAT": "Text",
         "PROJECT / EXERCISE NAME": "",
@@ -364,7 +364,7 @@
     },
     {
         "ARTIST": "",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -375,7 +375,7 @@
     },
     {
         "ARTIST": "",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -386,7 +386,7 @@
     },
     {
         "ARTIST": "Ahnjili Zhuparris",
-        "ARTWORK NAME": "Future Wake' OR 'Shibboleth'",
+        "ARTWORK_NAME": "Future Wake' OR 'Shibboleth'",
         "LINK": "https://www.artificialnouveau.com/",
         "FORMAT": "Image / Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -397,7 +397,7 @@
     },
     {
         "ARTIST": "Bart Hassink",
-        "ARTWORK NAME": "Dickpicker",
+        "ARTWORK_NAME": "Dickpicker",
         "LINK": "https://berendbartje.nl/projects/dickpicker/dickpicker.html",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -408,7 +408,7 @@
     },
     {
         "ARTIST": "Innovation-Lab",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -419,7 +419,7 @@
     },
     {
         "ARTIST": "Jonathan Reus",
-        "ARTWORK NAME": "Dadasets",
+        "ARTWORK_NAME": "Dadasets",
         "LINK": "https://jonathanreus.com/portfolio/dadasets/",
         "FORMAT": "Sound",
         "PROJECT / EXERCISE NAME": "",
@@ -430,7 +430,7 @@
     },
     {
         "ARTIST": "Katarina Petrovic",
-        "ARTWORK NAME": "AI Color Theory' OR 'The end of Individuals'",
+        "ARTWORK_NAME": "AI Color Theory' OR 'The end of Individuals'",
         "LINK": "https://katarinapetrovic.net/KP-portfolio-2024.pdf",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -441,7 +441,7 @@
     },
     {
         "ARTIST": "Leo Scarin",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -452,7 +452,7 @@
     },
     {
         "ARTIST": "Lenka Hamosova",
-        "ARTWORK NAME": "Tuning In",
+        "ARTWORK_NAME": "Tuning In",
         "LINK": "https://hamosova.com/tuning-in",
         "FORMAT": "Image / tactile",
         "PROJECT / EXERCISE NAME": "",
@@ -463,7 +463,7 @@
     },
     {
         "ARTIST": "Mariana Fernandez Mora",
-        "ARTWORK NAME": "",
+        "ARTWORK_NAME": "",
         "LINK": "",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -474,7 +474,7 @@
     },
     {
         "ARTIST": "Martijn van Boven",
-        "ARTWORK NAME": "code re-enactment project",
+        "ARTWORK_NAME": "code re-enactment project",
         "LINK": "https://474746.org/",
         "FORMAT": "image",
         "PROJECT / EXERCISE NAME": "",
@@ -485,7 +485,7 @@
     },
     {
         "ARTIST": "Radical Data collective",
-        "ARTWORK NAME": "Baby AI",
+        "ARTWORK_NAME": "Baby AI",
         "LINK": "https://radicaldata.org/projects/baby-ai/",
         "FORMAT": "",
         "PROJECT / EXERCISE NAME": "",
@@ -496,7 +496,7 @@
     },
     {
         "ARTIST": "Richard Vijgen",
-        "ARTWORK NAME": "The Case for a Small Language Model",
+        "ARTWORK_NAME": "The Case for a Small Language Model",
         "LINK": "https://www.richardvijgen.nl/#the-case-for-a-small-language-model",
         "FORMAT": "text / installation",
         "PROJECT / EXERCISE NAME": "",
@@ -507,7 +507,7 @@
     },
     {
         "ARTIST": "Berend te Linde",
-        "ARTWORK NAME": "Zelfportret",
+        "ARTWORK_NAME": "Zelfportret",
         "LINK": "https://xn--imq.net/zelfportret/",
         "FORMAT": "Image",
         "PROJECT / EXERCISE NAME": "",
@@ -518,7 +518,7 @@
     },
     {
         "ARTIST": "Ren Loren Britton",
-        "ARTWORK NAME": "Mining Meisspelling",
+        "ARTWORK_NAME": "Mining Meisspelling",
         "LINK": "https://www.lorenbritton.com/projects/mining-meisspelling",
         "FORMAT": "Text / installation",
         "PROJECT / EXERCISE NAME": "",
@@ -529,24 +529,13 @@
     },
     {
         "ARTIST": "Salim Bayri",
-        "ARTWORK NAME": "Hadra Collider",
+        "ARTWORK_NAME": "Hadra Collider",
         "LINK": "https://salimbayri.com/projects/hadra-collider",
         "FORMAT": "Sound",
         "PROJECT / EXERCISE NAME": "",
         "TOOL / API": "Bias in speech recognition",
         "ENTRY LEVEL": "",
         "EXERCISE": "x",
-        "NOTES": ""
-    },
-    {
-        "ARTIST": "",
-        "ARTWORK NAME": "",
-        "LINK": "",
-        "FORMAT": "",
-        "PROJECT / EXERCISE NAME": "",
-        "TOOL / API": "",
-        "ENTRY LEVEL": "",
-        "EXERCISE": "",
         "NOTES": ""
     }
 ]
