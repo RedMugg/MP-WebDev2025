@@ -20,14 +20,25 @@ Vragen die wij willen stellen tijdens de eerste debrief.
 - Over pagina's
 
 ### Notes eerste gesprek:
-- 
+- Sanne's structuur overnemen, niet de style.
+- Kunnen filteren op soort art.
+- Doelgroep = onze leeftijd
+- Print-styling: Alles moet uit te printen zijn. (Filmpjes kan je met QR codes bijvoorbeeld doen)
+- Eigen kunst kan met CSS, JS, Python en bijvoorbeeld p5.js
+- Kijken wat een Static Site Generator is.
+- Volgende week van hun een server.
+- Hij wil de gedachte/argumentatie achter keuzes horen en niet een al te grote designrationale.
+- Eerst lokaal een opzetje maken voordat wij de server krijgen.
 
 ### De opdracht:
 Hier wordt de opdracht in korte punten verwoord.
-- Maak een gids voor 50 uitgekozen AI kunstenaars en hun kunst. Probeer dit interactief te maken.
-- Gebruik
-- Wordpress(?) (Eigen Thema)
-- Vast font
+- Maak een gids voor 10 uitgekozen AI kunstenaars en hun kunst.
+- EN en NL.
+- Eigen style theme ontwikkelen.
+- Geen standaard menu (Zoals een top bar).
+- Print-Styling voor de gehele pagina.
+- Standaard accesibility en responsiveness.
+
 
 
 ## Team Links
