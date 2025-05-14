@@ -8,6 +8,36 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
     margin: 0;
     padding: 0;
+}
+
+main {
+    grid-area: 2/2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.artList {
+    display: flex;
+    flex-wrap: wrap;
+
 }

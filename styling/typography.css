@@ -1,3 +1,12 @@
 body {
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 100;
+}
+
