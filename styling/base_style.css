@@ -23,6 +23,8 @@ main {
     grid-column: 2/2;
     height: 100vh;
     overflow: auto;
+
+    padding-top: 5em;
 }
 
 a {
@@ -30,15 +32,9 @@ a {
     text-decoration: none;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 header {
   display: flex;
   justify-content: space-evenly;
-  position: fixed;
   
   background-color: white;
   width: 100%;
@@ -48,12 +44,13 @@ header {
   z-index: 400;
 }
 
-main {
-  padding-top: 5em;
-}
-
 footer {
     display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
