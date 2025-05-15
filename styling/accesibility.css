@@ -1,0 +1,30 @@
+details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+
+    margin: 1em;
+
+    border: 1px solid var(--colorPearlPink);
+    border-radius: 1em;
+}
+
+summary {
+    padding: 1em;
+}
+
+.accessibilityMenu {
+    background-color: var(--colorHighlightWhite);
+    border: 1px solid var(--colorPearlPink);
+    border-radius: 1em;
+
+    position: absolute;
+    right: 0;
+    top: 1em;
+
+    margin: .5em 0;
+    padding: 1em;
+    top: calc(100%)
+}

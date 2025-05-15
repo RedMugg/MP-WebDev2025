@@ -1,0 +1,1 @@
+const contrastCheckbox = document.getElementById("contrastText");

@@ -10,3 +10,5 @@ document.addEventListener('mousemove', (e) => {
     var(--colorPearlBlue) 60%, 
     var(--colorHighlightWhite))`;
 });
+
+// https://www.sinds1971.nl/lava/index.html
