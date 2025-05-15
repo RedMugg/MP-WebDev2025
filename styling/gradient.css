@@ -1,0 +1,73 @@
+section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  
+  padding:0 1em;
+}
+
+.aboutDiv {
+  display: flex;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  
+  width: 50%;
+  height: 100vh;
+
+  color: white;
+  z-index: 3;
+}
+
+.introName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+h2:nth-child(1) {
+  display: flex;
+  align-self: start;
+}
+
+.introName h2:nth-child(2) {
+  margin: 0 auto; /* This will center the second h2 */
+}
+
+.introName h2:nth-child(3) {
+  display: flex;
+  align-self: end;
+}
+
+#gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#texture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  filter:brightness(200%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
