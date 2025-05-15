@@ -1,8 +1,3 @@
 @import "./base_style.css";
 @import "./typography.css";
 @import "./header.css";
-
-/****************/
-/* Art Overview */
-/****************/
-@import "./artistCard.css"

@@ -25,7 +25,7 @@ function fetchArtists() {
 
                 artList.insertAdjacentHTML("beforeend", `
                 <li class="artistCard">
-                <a href="` + artistLink + `">
+                <a href="./detail_pagina.html">
                 <img src="` + artImg + `">
                 </img>
                 <h2>` + artName +`</h2>
