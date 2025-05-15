@@ -35,6 +35,27 @@ ul {
     padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  
+  color: black;
+  z-index: 400;
+}
+
+main {
+  padding-top: 5em;
+}
+
+footer {
+    display: flex;
+}
+
 li {
     list-style-type: none;
 }
