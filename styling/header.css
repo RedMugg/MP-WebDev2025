@@ -1,10 +1,48 @@
 header {
-    grid-area: 1/1;
-    position: fixed;
+    grid-column: 1/2;
+    justify-self: stretch;
     height: 100vh;
-    width: .3fr;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    background: linear-gradient(var(--colorPearlBlue) 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .4s, background-position 0s;
+}
+
+header:hover {
+    --p: 100%;
 }
 
 header ul {
+    grid-area: 2/2;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-evenly;
+}
 
+header li {
+    transition: .4s, background-position 0s;
+}
+
+
+header li:hover {
+    color: #fff;
+}
+
+header a {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
 }
