@@ -1,4 +1,43 @@
+:root {
+    --colorPearlPink: rgba(246, 197, 211, 1);
+    --colorPearlBlue: rgba(174, 226, 247, 1);
+    --colorLavenderSheen: rgba(213, 199, 247, 1);
+    --colorSoftMint: rgba(191, 244, 235, 1);
+    --colorHighlightWhite: rgba(255, 255, 255, 1);
+    --colorGlowShadow: rgba(198, 181, 216, 1);
+}
+
 body {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
     margin: 0;
     padding: 0;
+}
+
+main {
+    grid-area: 2/2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.artList {
+    display: flex;
+    flex-wrap: wrap;
+
 }

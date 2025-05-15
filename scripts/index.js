@@ -20,12 +20,18 @@ function fetchArtists() {
                 var artistName = dataFilter.ARTIST;
                 var artName = dataFilter.ARTWORK_NAME;
                 var artistLink = dataFilter.LINK;
+                var artImg = dataFilter.img_url;
+                var artType = dataFilter.FORMAT;
 
                 artList.insertAdjacentHTML("beforeend", `
-                <li>
-                <h1>` + artName +`</h1>
-                <h2>` + artistName + `</h2>
-                <a href="` + artistLink + `">Website</a>
+                <li class="artistCard">
+                <a href="` + artistLink + `">
+                <img src="` + artImg + `">
+                </img>
+                <h2>` + artName +`</h2>
+                <h3>` + artistName + `</h3>
+                <p>` + artType + `</p>
+                </a>
                 </li>`);
             });
 
