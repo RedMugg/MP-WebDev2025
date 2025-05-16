@@ -23,8 +23,6 @@ main {
     grid-column: 2/2;
     height: 100vh;
     overflow: auto;
-
-    padding-top: 5em;
 }
 
 a {
