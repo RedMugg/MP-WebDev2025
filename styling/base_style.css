@@ -1,11 +1,19 @@
 :root {
-    --colorPearlPink: rgba(246, 197, 211, 1);
-    --colorPearlBlue: rgba(174, 226, 247, 1);
-    --colorLavenderSheen: rgba(213, 199, 247, 1);
-    --colorSoftMint: rgba(191, 244, 235, 1);
-    --colorHighlightWhite: rgba(255, 255, 255, 1);
-    --colorGlowShadow: rgba(198, 181, 216, 1);
+    --colorHotPink: rgba(255, 31, 158, 1);
+    --colorCyanSplash: rgba(36, 227, 252, 1);
+    --colorLimePop: rgba(158, 252, 41, 1);
+    --colorTurquoiseWave: rgba(0, 224, 179, 1);
+    --colorNeonYellow: rgba(255, 242, 0, 1);
+    --colorGlowLime: rgba(158, 252, 41, 1);
+    --colorElectricPurple: rgba(180, 0, 255, 1);
+    --colorSkyGlow: rgba(135, 255, 255, 1);
+    --colorSunsetOrange: rgba(255, 94, 77, 1);
+    --colorMintFlash: rgba(128, 255, 212, 1);
+    --colorBubbleBlue: rgba(0, 153, 255, 1);
+    --colorLaserGreen: rgba(102, 255, 102, 1);
+    --colorPlasmaRose: rgba(255, 102, 204, 1);
   }
+  
 
 body {
     width: 100%;

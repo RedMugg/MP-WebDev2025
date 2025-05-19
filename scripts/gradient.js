@@ -6,9 +6,10 @@ document.addEventListener('mousemove', (e) => {
 
   // Set gradient origin based on cursor
   gradient.style.background = `radial-gradient(ellipse farthest-corner at ${x}% ${y}%, 
-    var(--colorPearlPink) 25%, 
-    var(--colorPearlBlue) 60%, 
-    var(--colorHighlightWhite))`;
+  var(--colorHotPink) 25%, 
+  var(--colorCyanSplash) 60%, 
+  var(--colorNeonYellow))`;
+
 });
 
 // https://www.sinds1971.nl/lava/index.html

@@ -32,16 +32,13 @@
   .kunstwerk {
     width: 100%;
     min-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
   }
   
   /* Tekst opmaak */
 
   p {
     font-size: 1.5rem;
-    background-color: var(--colorPearlBlue);
+    background-color: var(--colorTurquoiseWave);
     padding: 2vw;
     padding-left: 6vw;
     padding-right: 6vw;
@@ -62,7 +59,7 @@
   
   .naamKunstenaar {
     font-size: 2.5rem;
-    color: var(--colorLavenderSheen);
+    color: var(--colorSunsetOrange);  
     margin-top: 5rem;
   }
   
