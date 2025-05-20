@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+        <header>
         <!-- <span class="circle"></span> -->
         <ul>
             <li>
@@ -47,6 +47,43 @@
                 </a>
             </li>
         </ul>
+
+        <details>
+            <summary>Voor&shykeuren</summary>
+            <div id="voorkeurBlock">
+                <form>                    
+                    <fieldset class="animations">
+                        <legend>Animaties</legend>
+                        <label class="inputLabel">Aan
+                            <input type="radio" name="Animaties" value="AAN">
+                        </label>
+                        <label class="inputLabel">Uit
+                            <input type="radio" name="Animaties" value="UIT">
+                        </label>
+                        <label class="inputLabel">Rustig
+                            <input type="radio" name="Animaties" value="RUSTIG">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="colorMode">
+                        <legend>Kleurmodus</legend>
+                        <label for="light" class="inputLabel"> Licht
+                            <input type="radio" id="light" name="colorMode" value="licht">
+                        </label>
+
+                        <label for="dark" class="inputLabel"> Donker
+                            <input type="radio" id="dark" name="colorMode" value="donker">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="Lettergrootte">
+                        <legend>Lettergrootte</legend>
+                        <label for="fontSlider"><span id="fontSizeLabel">0</span></label><br>
+                        <input type="range" id="fontSlider" min="0" max="10" value="0">
+                    </fieldset>
+                </form>
+            </div>
+        </details>
     </header>
 
     <main>
@@ -65,5 +102,6 @@
 
 <script src="./scripts/index.js"></script>
 <script src="./scripts/mouse.js"></script>
+<script src="./scripts/accesibility.js"></script>
 
 </html>

@@ -7,6 +7,11 @@
     --colorGlowShadow: rgba(198, 181, 216, 1);
   }
 
+
+
+
+/* BASE LAYOUT */
+
 body {
     width: 100%;
     display: grid;
@@ -17,17 +22,6 @@ body {
 
     margin: 0;
     padding: 0;
-}
-
-main {
-    grid-column: 2/2;
-    height: 100vh;
-    overflow: auto;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 header {
@@ -42,8 +36,23 @@ header {
   z-index: 400;
 }
 
+main {
+    grid-column: 2/2;
+    height: 100vh;
+    overflow: auto;
+}
+
 footer {
     display: flex;
+}
+
+
+
+/* BASE ITEMS */
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -59,4 +68,83 @@ li {
     display: flex;
     flex-wrap: wrap;
 
+}
+
+
+
+
+/* LABEL */
+
+label {
+    padding-right: 0.3em;
+}
+
+.inputLabel {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+/* INPUT */
+
+input {
+    /* appearance: none; */
+    border: 1px solid black;
+}
+
+input:checked {
+    background-color: black;
+}
+
+
+
+
+/* BUTTON STYLING */
+
+button {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    width: 8em;
+
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+
+    background-color: white;
+    border-radius: 1em;
+}
+
+.buttonStyle {
+    font-weight: bold;
+}
+
+
+
+
+/* RADIO STYLING */
+
+input[type="radio"] {
+    border-radius: 50%;
+    width: 1em;                         
+
+    padding: .5em;
+    margin-left: .2ems;
+}
+
+
+
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    border-radius: 50%;
+    width: 1em;   
+    height: 1em;                      
+
+    margin: 0;
+    margin-left: .3em;
 }
