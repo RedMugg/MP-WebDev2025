@@ -68,3 +68,15 @@ li {
     flex-wrap: wrap;
 
 }
+
+.sortDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7dvh;
+    padding: 1dvh 1dvw;
+    border-radius: 2dvh;
+    font-size: 1rem;
+    margin-left: 80%;
+}
+
