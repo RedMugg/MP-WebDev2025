@@ -47,7 +47,7 @@ const root = document.documentElement;
     if (localStorage.getItem('colorMode') === 'auto') {
       applyTheme('auto');
     }
-  });
+  }); 
 
 
 
@@ -73,3 +73,38 @@ const root = document.documentElement;
         el.style.fontSize = (original + delta) + 'px';
       });
     });
+
+
+// Local Storage 
+
+document.querySelector('form').addEventListener('focusout', function() {
+    // Pak van dit formulier (this) de formulierdata (met new FormData)
+    let formData = new FormData(this)
+
+    let temporaryObject = {}
+    // Sla dat op in localStorage
+    for (const keyValue of formData.entries()) {
+      temporaryObject[keyValue[0]] = keyValue[1]
+    }
+
+    // Sla dat laatste op in localStorage..
+    localStorage['mijn-form'] = JSON.stringify(temporaryObject)
+
+    console.log('localStorage', localStorage['mijn-form'])
+  });
+
+  if (localStorage['mijn-form']) {
+    const storedData = JSON.parse(localStorage['mijn-form']);
+
+    for (const key in storedData) {
+      const inputField = document.querySelector(`[name="${key}"]`);
+      if (inputField) {
+         if (inputField.type === "radio") {
+                var input = document.querySelector(`[name=${key}][value=${storedData[key]}]`)
+                if (input) {
+                  input.setAttribute ("checked", "checked")
+                } 
+            }
+      }
+    }
+  }

@@ -11,4 +11,21 @@ document.addEventListener('mousemove', (e) => {
     var(--colorHighlightWhite))`;
 });
 
-// https://www.sinds1971.nl/lava/index.html
+function iniColorschemeInteraction() {
+    // if OS color scheme setting is changed
+    window.matchMedia("(prefers-color-scheme: light)").addEventListener('change', () => {
+      const colorSchemeRadioValue = $('[name="setting--color-theme"]:checked').value;
+      if(colorSchemeRadioValue == "system") {
+        setColorScheme("system");
+      }
+    });
+
+    // if color scheme radio is selected
+    colorSchemeRadios.forEach(colorSchemeRadio => {
+      colorSchemeRadio.onchange = handleColorSchemeChange;
+    });
+  }
+
+
+
+

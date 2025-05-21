@@ -9,15 +9,15 @@
 }
 
 :root[data-color-scheme="dark"] {
-  --colorPearlPink: rgba(156, 87, 104, 1);  
-  --colorPearlBlue: rgba(72, 125, 147, 1);      
-  --colorLavenderSheen: rgba(115, 100, 143, 1);  
-  --colorSoftMint: rgba(85, 148, 138, 1);        
-  --colorHighlightWhite: rgb(133, 164, 175);
-  --colorAccesibilityBlock: rgba(150, 150, 170, 1);
-  --colorGlowShadow: rgba(92, 78, 108, 0.6);
-  --backgroundDark: #1a1a1d;
-  --surfaceDark: #2a2a2e;
+    --colorPearlPink: rgba(156, 87, 104, 1);  
+    --colorPearlBlue: rgba(72, 125, 147, 1);      
+    --colorLavenderSheen: rgba(115, 100, 143, 1);  
+    --colorSoftMint: rgba(85, 148, 138, 1);        
+    --colorHighlightWhite: rgb(133, 164, 175);
+    --colorAccesibilityBlock: rgba(150, 150, 170, 1);
+    --colorGlowShadow: rgba(92, 78, 108, 0.6);
+    --backgroundDark: #1a1a1d;
+    --surfaceDark: #2a2a2e;
   
   * {
     color: white;
