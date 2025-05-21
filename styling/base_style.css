@@ -4,8 +4,27 @@
     --colorLavenderSheen: rgba(213, 199, 247, 1);
     --colorSoftMint: rgba(191, 244, 235, 1);
     --colorHighlightWhite: rgba(255, 255, 255, 1);
+    --colorAccesibilityBlock: rgba(170, 170, 170, 1);
     --colorGlowShadow: rgba(198, 181, 216, 1);
+}
+
+:root[data-color-scheme="dark"] {
+  --colorPearlPink: rgba(156, 87, 104, 1);  
+  --colorPearlBlue: rgba(72, 125, 147, 1);      
+  --colorLavenderSheen: rgba(115, 100, 143, 1);  
+  --colorSoftMint: rgba(85, 148, 138, 1);        
+  --colorHighlightWhite: rgb(133, 164, 175);
+  --colorAccesibilityBlock: rgba(150, 150, 170, 1);
+  --colorGlowShadow: rgba(92, 78, 108, 0.6);
+  --backgroundDark: #1a1a1d;
+  --surfaceDark: #2a2a2e;
+  
+  * {
+    color: white;
   }
+}
+
+
 
 
 

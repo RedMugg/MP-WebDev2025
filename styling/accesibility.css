@@ -41,7 +41,7 @@ legend {
     position:absolute;
     bottom: 0;
 
-    background-color: white;
+    background-color: var(--colorPearlBlue);
     border: 1px solid var(--colorPearlBlue);
     border-radius: 1em;
 
