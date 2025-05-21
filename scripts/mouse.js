@@ -1,28 +1,18 @@
-function getMouseCoords(e) {
-    var e = e || window.event;
-    document.getElementById('msg').innerHTML = e.clientX + ', ' +
-      e.clientY + '<br>' + e.screenX + ', ' + e.screenY;
-  }
+const hoverEffect = document.querySelectorAll(".hoverEffect");
+
+const colors = ["--colorHotPink", "--colorCyanSplash", "--colorLimePop", "--colorSunsetOrange"];
+
+
+hoverEffect.forEach(hoverEffect => {
+  hoverEffect.addEventListener('mouseover', (e) => {
+    let x = e.pageX - hoverEffect.offsetLeft;
+    let y = e.pageY - hoverEffect.offsetTop;
   
-    var followCursor = (
-    function() {
-    var s = document.querySelector('.circle');
-  
-    return {
-      init: function() {
-        document.body.appendChild(s);
-      },
-  
-      run: function(e) {
-        var e = e || window.event;
-        s.style.left = (e.clientX - 2) + 'px';
-        s.style.top = (e.clientY - 2) + 'px';
-        getMouseCoords(e);
-      }
-    };
-  }());
-  
-  window.onload = function() {
-    followCursor.init();
-    document.body.onmousemove = followCursor.run;
-  }
+    let randomNumber = Math.floor((Math.random() * colors.length) - 1);
+    let randomColor = colors[randomNumber]
+
+    hoverEffect.style.setProperty('--x', x + "px")
+    hoverEffect.style.setProperty('--y', y + "px")
+    hoverEffect.style.setProperty('--randomColor', "var(" + randomColor + ")")
+  })
+})
