@@ -14,34 +14,58 @@
   
   /* Container voor afbeelding + beschrijving naast elkaar */
   .container {
+    width: fit-content;
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    flex-wrap: wrap;
-    margin: 6vw;
+    padding: 2rem;
     margin-bottom: 1vw;
+   
   }
   
   /* Afbeelding */
   .hoofdKunstwerk {
     width: 35%;
     object-fit: cover;
-    max-width: 100%;
+  
   }
 
   .kunstwerk {
     width: 100%;
     min-width: 100%;
   }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color:var(--colorSunsetOrange);
+  }
   
+
+
   /* Tekst opmaak */
 
-  p {
-    font-size: 1.5rem;
-    background-color: var(--colorTurquoiseWave);
-    padding: 2vw;
-    padding-left: 6vw;
-    padding-right: 6vw;
+  .textSectie {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 1000px;
+  
+  }
+
+  .textSectie p {
+    font-size: 1.2rem;
+    /* background-color: var(--colorTurquoiseWave); */
+   
+  }
+
+  .textSectie a {
+    background-color: pink;
+    padding: 1em;
+    border-radius: 2em;
+    width: fit-content;
   }
 
   .geenAchtergrond {
@@ -50,15 +74,16 @@
 
   .naamKunst {
     font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
-    font-size: 15rem;
+    font-size: 15vw;
     color: black;
     margin-bottom: 0.5rem;
     line-height: .7;
     letter-spacing: -1.5vw;
+
   }
   
   .naamKunstenaar {
-    font-size: 2.5rem;
+    font-size: 4vw;
     color: var(--colorSunsetOrange);  
     margin-top: 5rem;
   }
@@ -69,6 +94,7 @@
     border-radius: 12px;
     color: #222;
     flex: 1;
+    width: 65%;
   }
   
   /* Mobiele weergave */
@@ -91,4 +117,6 @@
       padding: 1rem;
     }
   }
+  
+
   
