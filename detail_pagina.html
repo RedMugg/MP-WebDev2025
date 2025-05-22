@@ -62,19 +62,23 @@
 
                     <fieldset class="colorMode">
                         <legend>Kleurmodus</legend>
+                        <label for="auto" class="inputLabel"> Auto
+                            <input type="radio" id="auto" name="colorMode" value="auto">
+                        </label>
+
                         <label for="light" class="inputLabel"> Licht
-                            <input type="radio" id="light" name="colorMode" value="licht">
+                            <input type="radio" id="light" name="colorMode" value="light">
                         </label>
 
                         <label for="dark" class="inputLabel"> Donker
-                            <input type="radio" id="dark" name="colorMode" value="donker">
+                            <input type="radio" id="dark" name="colorMode" value="dark">
                         </label>
                     </fieldset>
 
                     <fieldset class="Lettergrootte">
                         <legend>Lettergrootte</legend>
                         <label for="fontSlider"><span id="fontSizeLabel">0</span></label><br>
-                        <input type="range" id="fontSlider" min="0" max="10" value="0">
+                        <input type="range" id="fontSlider" min="0" max="10" value="0"  name="fontSize">
                     </fieldset>
                 </form>
             </div>

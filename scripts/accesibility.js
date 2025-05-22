@@ -11,15 +11,15 @@ const allElements = document.querySelectorAll('body *');
 // Light and Darkmode
 
 const root = document.documentElement;
-  const radios = document.querySelectorAll('input[name="colorMode"]');
+const radios = document.querySelectorAll('input[name="colorMode"]');
 
   function applyTheme(mode) {
-    if (mode === 'donker') {
+    if (mode === 'dark') {
       root.setAttribute('data-color-scheme', 'dark');
-    } else if (mode === 'licht') {
+    } else if (mode === 'light') {
       root.removeAttribute('data-color-scheme');
     } else if (mode === 'auto') {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       if (prefersDark) {
         root.setAttribute('data-color-scheme', 'dark');
       } else {
@@ -27,11 +27,6 @@ const root = document.documentElement;
       }
     }
   }
-
-
-  const saved = localStorage.getItem('colorMode') || 'auto';
-  document.getElementById(saved)?.setAttribute('checked', true);
-  applyTheme(saved);
 
 
   radios.forEach(radio => {
@@ -43,19 +38,13 @@ const root = document.documentElement;
   });
 
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (localStorage.getItem('colorMode') === 'auto') {
-      applyTheme('auto');
-    }
-  }); 
-
 
 
 
 // Lettergrote slider
 
-   const slider = document.getElementById('fontSlider');
-    const label = document.getElementById('fontSizeLabel');
+  const slider = document.getElementById('fontSlider');
+  const label = document.getElementById('fontSizeLabel');
 
     // Store original font sizes
     allElements.forEach(el => {
@@ -65,19 +54,21 @@ const root = document.documentElement;
     });
 
     slider.addEventListener('input', () => {
-      const delta = parseInt(slider.value);
+    const delta = parseInt(slider.value);
       label.textContent = delta;
 
-      allElements.forEach(el => {
-        const original = parseFloat(el.getAttribute('data-original-font-size'));
+    allElements.forEach(el => {
+    const original = parseFloat(el.getAttribute('data-original-font-size'));
         el.style.fontSize = (original + delta) + 'px';
       });
     });
 
 
+
+
 // Local Storage 
 
-document.querySelector('form').addEventListener('focusout', function() {
+document.querySelector('form').addEventListener('click', function() {
     // Pak van dit formulier (this) de formulierdata (met new FormData)
     let formData = new FormData(this)
 
@@ -99,6 +90,11 @@ document.querySelector('form').addEventListener('focusout', function() {
     for (const key in storedData) {
       const inputField = document.querySelector(`[name="${key}"]`);
       if (inputField) {
+        if (inputField.type === "range") {
+              inputField.value = storedData[key];
+              slider.dispatchEvent(new Event('input'));
+              }
+
          if (inputField.type === "radio") {
                 var input = document.querySelector(`[name=${key}][value=${storedData[key]}]`)
                 if (input) {
@@ -108,3 +104,8 @@ document.querySelector('form').addEventListener('focusout', function() {
       }
     }
   }
+
+  const storedColorMode = localStorage.getItem('colorMode');
+if (storedColorMode) {
+  applyTheme(storedColorMode);
+}
