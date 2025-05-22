@@ -9,7 +9,7 @@ let dataFilter = [];
 
 // Fetch de artist lijst van de JSON file
 function fetchArtists() {
-    fetch('./sources/artist_list.json')
+    fetch('/sources/artist_list.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

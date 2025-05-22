@@ -12,8 +12,29 @@
     --colorBubbleBlue: rgba(0, 153, 255, 1);
     --colorLaserGreen: rgba(102, 255, 102, 1);
     --colorPlasmaRose: rgba(255, 102, 204, 1);
-  }
-  
+}
+
+
+section>h1 {
+    font-size: 15rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    line-height: .7;
+    letter-spacing: -1.5vw;
+}
+
+section>p {
+    background-color: transparent;
+    color: black;
+
+}
+
+div > h2{
+    font-weight: 700;
+}
+
+
 
 body {
     width: 100%;
@@ -38,21 +59,7 @@ a {
     text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-  
-  background-color: white;
-  width: 100%;
-  margin: 0;
-  
-  color: black;
-  z-index: 400;
-}
 
-footer {
-    display: flex;
-}
 
 ul {
     margin: 0;
@@ -79,4 +86,3 @@ li {
     font-size: 1rem;
     margin-left: 80%;
 }
-

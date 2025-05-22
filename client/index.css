@@ -1,0 +1,24 @@
+/* global styles */
+@import 'reset.css';
+@import "typography.css";
+
+/*.layout and view styling */
+@import '../server/layouts/base.css';
+@import 'styling/accesibility.css';
+@import 'styling/artist_card.css';
+@import 'styling/base_style.css';
+@import 'styling/detail_page.css';
+@import 'styling/gradient.css';
+
+
+/* component styling */
+
+body {
+  color: black;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 1rem;
+}

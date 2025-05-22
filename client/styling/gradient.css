@@ -45,14 +45,14 @@ section {
   background-attachment: scroll;
 }
 
-h1 {
+/* h1 {
   font-size: 15rem;
     color: white;
     margin-bottom: 0.5rem;
     margin-top: 0;
     line-height: .7;
     letter-spacing: -1.5vw;
-}
+} */
 
 p {
   background-color: none;

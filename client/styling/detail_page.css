@@ -1,10 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-
   
   body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -14,13 +7,14 @@
   
   /* Container voor afbeelding + beschrijving naast elkaar */
   .container {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    flex-wrap: wrap;
     margin: 6vw;
     margin-bottom: 1vw;
+    align-items: start;
   }
+  
   
   /* Afbeelding */
   .hoofdKunstwerk {

@@ -1,0 +1,39 @@
+{% layout "base.liquid" %}
+
+{% block content %}
+
+
+
+    <main>
+        <select id="sortDropdown" class="sortDropdown">
+            <option value="artist-asc">Artiest A-Z</option>
+            <option value="artist-desc">Artiest Z-A</option>
+            <option value="artwork-asc">Kunstwerk A-Z</option>
+            <option value="artwork-desc">Kunstwerk Z-A</option>
+          </select> 
+          
+          <select id="filterDropdown" class="sortDropdown">
+            <option value="all">Alle media</option>
+            <option value="image">Beeld (foto's)</option>
+            <option value="sound">Geluid</option>
+            <option value="text">Text</option>
+          </select>
+          
+        </select>
+        <section>
+            <ul class="artList">
+
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<script src="../scripts/index.js"></script>
+<script src="./scripts/mouse.js"></script>
+
+{% endblock %}
