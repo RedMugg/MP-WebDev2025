@@ -10,8 +10,9 @@ const allElements = document.querySelectorAll('body *');
 
 // Light and Darkmode
 
+// Zet het html element als root en zet de radios met name colorMode in als colorRadios
 const root = document.documentElement;
-const radios = document.querySelectorAll('input[name="colorMode"]');
+const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
   function applyTheme(mode) {
     if (mode === 'dark') {
@@ -28,8 +29,9 @@ const radios = document.querySelectorAll('input[name="colorMode"]');
     }
   }
 
-
-  radios.forEach(radio => {
+// Haalt de kleurmode op uit de local storage en selecteert de juiste radio button en past de colorscheme toe
+// als deze aangepast wordt.
+  colorRadios.forEach(radio => {
     radio.addEventListener('change', e => {
       const mode = e.target.value;
       localStorage.setItem('colorMode', mode);
@@ -46,20 +48,22 @@ const radios = document.querySelectorAll('input[name="colorMode"]');
   const slider = document.getElementById('fontSlider');
   const label = document.getElementById('fontSizeLabel');
 
-    // Store original font sizes
+    // Haalt de standaard lettergrootte op. 
     allElements.forEach(el => {
       const style = window.getComputedStyle(el);
       const originalSize = parseFloat(style.fontSize);
       el.setAttribute('data-original-font-size', originalSize);
     });
 
+    // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
     slider.addEventListener('input', () => {
-    const delta = parseInt(slider.value);
-      label.textContent = delta;
+    const newValue = parseInt(slider.value);
+      label.textContent = newValue;
 
+    // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
     allElements.forEach(el => {
     const original = parseFloat(el.getAttribute('data-original-font-size'));
-        el.style.fontSize = (original + delta) + 'px';
+        el.style.fontSize = (original + newValue) + 'px';
       });
     });
 
@@ -90,11 +94,14 @@ document.querySelector('form').addEventListener('click', function() {
     for (const key in storedData) {
       const inputField = document.querySelector(`[name="${key}"]`);
       if (inputField) {
+        // Voegt de waarde van de slider uit de local storage toe aan de label en zet de slider op de juiste waarde.
+        // Ook wordt de de fontsize op de pagina aangepast aan wat er uit de local storage gehaald wordt.
         if (inputField.type === "range") {
               inputField.value = storedData[key];
               slider.dispatchEvent(new Event('input'));
               }
 
+        // Vult de value van de radio button in met de waarde die in de local storage staat.
          if (inputField.type === "radio") {
                 var input = document.querySelector(`[name=${key}][value=${storedData[key]}]`)
                 if (input) {
@@ -105,6 +112,7 @@ document.querySelector('form').addEventListener('click', function() {
     }
   }
 
+  // Past de colorscheme die in de local storage staat toe aan de pagina.
   const storedColorMode = localStorage.getItem('colorMode');
 if (storedColorMode) {
   applyTheme(storedColorMode);

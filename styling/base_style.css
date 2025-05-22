@@ -41,6 +41,15 @@ body {
 
     margin: 0;
     padding: 0;
+
+    background: radial-gradient( ellipse at center,
+    var(--colorPearlPink) 0%,
+    var(--colorPearlBlue) 25%,
+    var(--colorLavenderSheen) 50%,
+    var(--colorSoftMint) 75%,
+    var(--colorHighlightWhite) 90%,
+    var(--colorGlowShadow) 100%
+);
 }
 
 header {
