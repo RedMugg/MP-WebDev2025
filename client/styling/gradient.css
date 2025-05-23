@@ -37,7 +37,7 @@ section {
   min-height: 100%;
   z-index: -1;
 
-  background: url(/images/grain_texture.jpg);
+  background: url(/client/public/images/grain_texture.jpg);
   /* filter: contrast(250%) brightness(250%); */
   opacity: 0.3;
   background-size: cover;
