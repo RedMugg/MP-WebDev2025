@@ -1,6 +1,13 @@
+.artList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
 .artistCard {
     width: 400px;
-    height: 400px;
+
     padding: 20px;
 
     background-color: var(s);

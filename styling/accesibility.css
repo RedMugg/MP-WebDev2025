@@ -1,30 +1,70 @@
 details {
+    grid-area: 3 / 2;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
+    justify-content: end;
+    align-items: end;
+    z-index: 20;
+}
 
-    margin: 1em;
-
-    border: 1px solid var(--colorPearlPink);
-    border-radius: 1em;
+fieldset {
+    border: 0;
+    margin: 0.2em 0;;
 }
 
 summary {
-    padding: 1em;
+    list-style: none;
+    cursor: pointer;
+    display: list-item;
+
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
-.accessibilityMenu {
-    background-color: var(--colorHighlightWhite);
-    border: 1px solid var(--colorPearlPink);
+summary::before {
+    content: "▶";
+    transition: transform 1s ease;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+details[open] summary::before {
+    transform: rotate(180deg);
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#voorkeurBlock {
+    display: flex;
+
+    position:absolute;
+    bottom: 0;
+
+    background-color: var(--colorPearlBlue);
+    border: 1px solid var(--colorPearlBlue);
     border-radius: 1em;
 
-    position: absolute;
-    right: 0;
-    top: 1em;
+    padding: 1rem;
+    margin: 1em;
 
-    margin: .5em 0;
-    padding: 1em;
-    top: calc(100%)
+    z-index: 2;
 }
+
+
+
+
+/* SLIDER */
+
+ body {
+      transition: font-size 0.2s ease;
+    }
+
+    .slider-container {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
