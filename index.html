@@ -21,27 +21,75 @@
 </head>
 
 <body>
-  <header>
-    <ul class="hoverEffect">
-      <li>
-        <a href="./index.html">
-          Home
-        </a>
-      </li>
+    <header>
+        <!-- <span class="circle"></span> -->
+        <ul>
+            <li>
+                <a href="./index.html">
+                    Home
+                </a>
+            </li>
 
-      <li>
-        <a href="./overview.html">
-          Collection
-        </a>
-      </li>
+            <li>
+                <a href="./overview.html">
+                    Collection
+                </a>
+            </li>
 
-      <li>
-        <a href="">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </header>
+            <li>
+                <a href="">
+                    About us
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <details>
+            <summary>Voor&shykeuren</summary>
+            <div id="voorkeurBlock">
+                <form>                    
+                    <fieldset class="animations">
+                        <legend>Animaties</legend>
+                        <label class="inputLabel">Aan
+                            <input type="radio" name="Animaties" value="AAN">
+                        </label>
+                        <label class="inputLabel">Uit
+                            <input type="radio" name="Animaties" value="UIT">
+                        </label>
+                        <label class="inputLabel">Rustig
+                            <input type="radio" name="Animaties" value="RUSTIG">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="colorMode">
+                        <legend>Kleurmodus</legend>
+                        <label for="auto" class="inputLabel"> Auto
+                            <input type="radio" id="auto" name="colorMode" value="auto">
+                        </label>
+
+                        <label for="light" class="inputLabel"> Licht
+                            <input type="radio" id="light" name="colorMode" value="light">
+                        </label>
+
+                        <label for="dark" class="inputLabel"> Donker
+                            <input type="radio" id="dark" name="colorMode" value="dark">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="Lettergrootte">
+                        <legend>Lettergrootte</legend>
+                        <label for="fontSlider"><span id="fontSizeLabel">0</span></label><br>
+                        <input type="range" id="fontSlider" min="0" max="10" value="0" name="fontSize">
+                    </fieldset>
+                </form>
+            </div>
+        </details>
+    </header>
 
   <main>
 
@@ -72,8 +120,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-
 <script src="./scripts/gradient.js"></script>
+<script src="./scripts/accesibility.js"></script>
 <script src="./scripts/mouse.js"></script>
 <script src="./scripts/headerAnim.js"></script>
 

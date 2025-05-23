@@ -12,4 +12,23 @@ document.addEventListener('mousemove', (e) => {
 
 });
 
-// https://www.sinds1971.nl/lava/index.html
+// Gradient met CSS en y en x als custom properties.
+
+function iniColorschemeInteraction() {
+    // if OS color scheme setting is changed
+    window.matchMedia("(prefers-color-scheme: light)").addEventListener('change', () => {
+      const colorSchemeRadioValue = $('[name="setting--color-theme"]:checked').value;
+      if(colorSchemeRadioValue == "system") {
+        setColorScheme("system");
+      }
+    });
+
+    // if color scheme radio is selected
+    colorSchemeRadios.forEach(colorSchemeRadio => {
+      colorSchemeRadio.onchange = handleColorSchemeChange;
+    });
+  }
+
+
+
+
