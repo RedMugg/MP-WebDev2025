@@ -11,6 +11,8 @@ document.addEventListener('mousemove', (e) => {
     var(--colorHighlightWhite))`;
 });
 
+// Gradient met CSS en y en x als custom properties.
+
 function iniColorschemeInteraction() {
     // if OS color scheme setting is changed
     window.matchMedia("(prefers-color-scheme: light)").addEventListener('change', () => {
