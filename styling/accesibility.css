@@ -2,7 +2,8 @@ details {
     grid-area: 3 / 2;
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: end;
+    z-index: 20;
 }
 
 fieldset {
