@@ -33,12 +33,9 @@
     display: flex;
     justify-content: start;
     width: 80vw;
-background-color: #fff;
-    position: fixed;
     top: 0;
     padding: 1rem;
     gap: 2em;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* grijze schaduw aan de onderkant */
   }
 
 
@@ -72,7 +69,6 @@ background-color: #fff;
     display: flex;
     align-items: flex-start;
     gap: 2rem;  
-      margin-top: 6rem;
   }
   
 
