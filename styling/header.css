@@ -1,7 +1,3 @@
-header:hover {
-    --p: 100%;
-}
-
 header ul {
     position: relative;
     grid-column: 1/4;
@@ -13,7 +9,7 @@ header ul {
 
     padding: 25px;
     overflow: hidden;
-    background-color: var(--colorSkyGlow);
+    background-color: var(--colorPearlBlue);
 }
 
 header ul::after {
