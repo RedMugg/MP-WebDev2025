@@ -5,118 +5,208 @@
   }
 
 
-  
+
+
   body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     color: #333;
-    min-height: 100vh;
   }
+
+  .detailPage {
   
-  /* Container voor afbeelding + beschrijving naast elkaar */
-  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2rem;
+  }
+
+
+  /*  oefening sectie */
+
+  .oefeningSectie {
+    display: flex;
+    justify-content: start;
+    width: 80vw;
+background-color: #fff;
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    gap: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* grijze schaduw aan de onderkant */
+  }
+
+
+
+  .oefeningSectie a::after {
+    font-family: "Font Awesome 6 Free"; /* of "Font Awesome 5 Free" voor oudere versies */
+    font-weight: 900; /* nodig voor solid icons */
+    content: "\f02d"; /* Unicode voor bv. fa-user */
+    margin-left: 0.5rem;
+  }
+
+  
+.oefeningSectie a:nth-of-type(2)::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f02e"; /* fa-bell */
+  margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
+  
+/* top sectie */
+  .topSectie {
+    
     width: fit-content;
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
-    padding: 2rem;
-    margin-bottom: 1vw;
-   
+    gap: 2rem;  
+      margin-top: 6rem;
   }
   
+
+  .beschrijving {
+    display: flex;
+  flex-direction: column;
+  grid-gap: 2em;
+    line-height: 1.8;
+    color: #222;
+    width: 65%;
+  }
+
   /* Afbeelding */
   .hoofdKunstwerk {
     width: 35%;
     object-fit: cover;
-  
+    border-radius: 15px;
   }
 
-  .kunstwerk {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .line {
-    height: 1px;
-    width: 100%;
-    background-color:var(--colorSunsetOrange);
-  }
-  
+  .naamKunstenaar {
+    font-size: 4vw;
+    color: var(--colorSunsetOrange);  
 
 
-  /* Tekst opmaak */
-
-  .textSectie {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    max-width: 1000px;
-  
-  }
-
-  .textSectie p {
-    font-size: 1.2rem;
-    /* background-color: var(--colorTurquoiseWave); */
-   
-  }
-
-  .textSectie a {
-    background-color: pink;
-    padding: 1em;
-    border-radius: 2em;
-    width: fit-content;
-  }
-
-  .geenAchtergrond {
-    background-color: transparent;
   }
 
   .naamKunst {
-    font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
     font-size: 15vw;
+    font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
     color: black;
     margin-bottom: 0.5rem;
     line-height: .7;
     letter-spacing: -1.5vw;
-
-  }
-  
-  .naamKunstenaar {
-    font-size: 4vw;
-    color: var(--colorSunsetOrange);  
-    margin-top: 5rem;
-  }
-  
-  .beschrijving {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    border-radius: 12px;
-    color: #222;
-    flex: 1;
-    width: 65%;
-  }
-  
-  /* Mobiele weergave */
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .kunstwerk {
-      width: 80%;
-    }
-  
-    h2.naamKunst {
-      font-size: 2rem;
-      text-align: center;
-    }
-  
-    .beschrijving {
-      padding: 1rem;
-    }
   }
   
 
+  /* Kunstwerk sectie */
+  /* Tekst opmaak */
+  .kunstwerkSectie {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    border: 2px solid var(--colorBubbleBlue);
+    border-radius: 15px;
+  }
+
+
   
+  .textContainer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 15px;
+    padding: 2em;
+
+  
+  }
+
+.tweedeContainer {
+    /* background-color: var(--PlasmaRose); */
+    background-color: var(--colorSunsetOrange);
+  }
+
+  .textContainer p {
+    font-size: 1.2rem;
+    color: #0c0c0c;
+    /* background-color: var(--colorTurquoiseWave); */
+    max-width: 1000px;
+  }
+
+  .detailPage a {
+    background-color: var(--colorSunsetOrange);
+    padding: 1em;
+    color: white;
+    border-radius: 2em;
+    width: fit-content;
+  }
+
+  .tweedeContainer p {
+   color: white;
+  }
+
+
+  .oefeningSectie a:first-child {
+    background-color: var(--colorBubbleBlue);
+    color: #fff;
+
+    }
+    .oefeningSectie a:nth-of-type(2) {
+      background-color: var(--colorPlasmaRose); 
+      color: white;
+    }
+
+
+
+
+
+  .textContainer h2 {
+    font-size: 2.5rem;
+    color: #0c0c0c;
+  }
+
+
+  .tweedeContainer h2 {
+    color: white;
+   }
+ 
+
+
+  .imageContainerMainArt {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+
+.imageContainerMainArt img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+@media (max-width: 1200px)  {
+  /* Tablet-specifieke stijlen hier */
+  .kunstwerkSectie {
+    flex-direction: column;
+  }
+
+  .detailPage p {
+  font-size: 16px;
+  }
+}

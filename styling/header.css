@@ -2,8 +2,6 @@ header {
     grid-column: 1/2;
     justify-self: stretch;
     height: 100vh;
-
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
