@@ -24,13 +24,6 @@
   }
 }
 
-
-
-
-
-
-/* BASE LAYOUT */
-
 body {
     width: 100%;
     display: grid;
@@ -219,3 +212,17 @@ input[type="checkbox"] {
         font-weight: 300;
     }
 }
+
+}
+
+.sortDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7dvh;
+    padding: 1dvh 1dvw;
+    border-radius: 2dvh;
+    font-size: 1rem;
+    margin-left: 80%;
+}
+
