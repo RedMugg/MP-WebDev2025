@@ -118,11 +118,7 @@ label {
     align-items: center;
 }
 
-
-
-
 /* INPUT */
-
 input {
     /* appearance: none; */
     border: 1px solid black;
@@ -131,9 +127,6 @@ input {
 input:checked {
     background-color: black;
 }
-
-
-
 
 /* BUTTON STYLING */
 
