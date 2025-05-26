@@ -1,11 +1,20 @@
+.artList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
 .artistCard {
     width: 400px;
-    height: 400px;
+
     padding: 20px;
 
     background-color: var(s);
 
     transition-duration: .3s;
+
+    color: white;
 }
 
 .artistCard:hover {
@@ -20,18 +29,18 @@
     margin: 0;
 }
 
-h2 {
+.artistCard h2 {
     border-top: 5px solid black;
     margin-bottom: 2px;
+    font-size: 2em;
 }
 
-h3 {
+.artistCard h3 {
     margin: 0;
 }
 
-p {
+.artistCard p {
     margin: 0;
-    /* color: var(--colorHotPink); */
-    /* color: black;
+    color: var(--colorHotPink);
+    color: black;
 }
-

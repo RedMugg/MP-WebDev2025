@@ -2,9 +2,10 @@
 
 {% block content %}
 
-
-
     <main>
+    <div id="gradient" class="gradient-bg"></div>
+    <div id="texture"></div>
+
         <select id="sortDropdown" class="sortDropdown">
             <option value="artist-asc">Artiest A-Z</option>
             <option value="artist-desc">Artiest Z-A</option>
@@ -20,6 +21,8 @@
           </select>
           
         </select>
+
+
         <section>
             <ul class="artList">
 
@@ -33,7 +36,5 @@
     </footer>
 </body>
 
-<script src="/server/scripts/index.js"></script>
-<script src="/server/scripts/mouse.js"></script>
-
+        <script src="/server/scripts/getArt.js"></script>
 {% endblock %}

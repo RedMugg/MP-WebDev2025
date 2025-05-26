@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styling/imports.css">
     <link rel="stylesheet" href="styling/detail_page.css">
 </head>
-
+  
 <body>
     <header>
         <ul class="hoverEffect">
@@ -37,51 +37,124 @@
                 </a>
             </li>
         </ul>
+
+        <details>
+            <summary>Voor&shykeuren</summary>
+            <div id="voorkeurBlock">
+                <form>                    
+                    <fieldset class="animations">
+                        <legend>Animaties</legend>
+                        <label class="inputLabel">Aan
+                            <input type="radio" name="Animaties" value="AAN">
+                        </label>
+                        <label class="inputLabel">Uit
+                            <input type="radio" name="Animaties" value="UIT">
+                        </label>
+                        <label class="inputLabel">Rustig
+                            <input type="radio" name="Animaties" value="RUSTIG">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="colorMode">
+                        <legend>Kleurmodus</legend>
+                        <label for="auto" class="inputLabel"> Auto
+                            <input type="radio" id="auto" name="colorMode" value="auto">
+                        </label>
+
+                        <label for="light" class="inputLabel"> Licht
+                            <input type="radio" id="light" name="colorMode" value="light">
+                        </label>
+
+                        <label for="dark" class="inputLabel"> Donker
+                            <input type="radio" id="dark" name="colorMode" value="dark">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="Lettergrootte">
+                        <legend>Lettergrootte</legend>
+                        <label for="fontSlider"><span id="fontSizeLabel">0</span></label><br>
+                        <input type="range" id="fontSlider" min="0" max="10" value="0"  name="fontSize">
+                    </fieldset>
+                </form>
+            </div>
+        </details>
     </header>
 
-    <main>
 
-        <div class="container">
+    <div id="gradient" class="gradient-bg"></div>
+    <div id="texture"></div>
+
+    <main class="detailPage">
+
+        <section class="oefeningSectie">
+            <a href="">Bekijk oefening</a>
+            <a href="">Sla op</a>
+
+        </section>
+      
+        <div class="content">
+
+        <section class="topSectie">
             <div class="beschrijving">
                 <h1 class="naamKunst">Once upon a garden</h1>
                 <h2 class="naamKunstenaar">Linda Dounia</h2>
             </div>
 
+
             <img src="images/enkele_bloem.png" alt="hoofdKunstwerk" class="hoofdKunstwerk">
-        </div>
+        </section>
 
-        <p>
-            Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig tot geen
-            gegevens hebben en die
-            we ons dus ook niet kunnen herinneren. In dit project gebruikt Linda Dounia AI als een tijdmachine om
-            visuele gegevens samen te
-            stellen over bloemen die we niet hebben vastgelegd op basis van schaarse en gefragmenteerde beschikbare
-            gegevens. Once Upon A
-            Garden: The Complete Archive presenteert 50 opkomende soorten speculatieve flora in 5 hoofdstukken. De
-            hoofdstukken komen overeen
-            met de chronologische voortgang van het project en weerspiegelen de verbeteringen van de AI-modellen in het
-            synthetiseren van
-            beelden op basis van context.
-        </p>
+        <section class="kunstwerkSectie">
+            <div class="textContainer">
+                <h2> Once upon a garden</h2>
+                <p>
+                    Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig
+                    tot
+                    geen
+                    gegevens hebben en die
+                    we ons dus ook niet kunnen herinneren. In dit project gebruikt Linda Dounia AI als een tijdmachine
+                    om
+                    visuele gegevens samen te
+                    stellen over bloemen die we niet hebben vastgelegd op basis van schaarse en gefragmenteerde
+                    beschikbare
+                    gegevens. Once Upon A
+                    Garden: The Complete Archive presenteert 50 opkomende soorten speculatieve flora in 5 hoofdstukken.
+                    De
+                    hoofdstukken komen overeen
+                    met de chronologische voortgang van het project en weerspiegelen de verbeteringen van de AI-modellen
+                    in
+                    het
+                    synthetiseren van
+                    beelden op basis van context.
+                </p>
+                <a href="">Bezoek website</a>
+            </div>
+            <div class="imageContainerMainArt">
+                <img src="images/veel_bloemen.png" alt="hoofdKunstwerk">
+            </div>
+        </section>
 
-        <img src="images/veel_bloemen.png" alt="hoofdKunstwerk" class="kunstwerk">
+        <section class="textContainer tweedeContainer">
+            <h2> Oefening</h2>
+            <p>
+                - Denk voor deze oefening na over een archief dat grote hoeveelheden informatie mist, of een archief dat niet volledig ontwikkeld of gedocumenteerd is.
+                <br>
+                - Maak een selectie van echte visuele archiefstukken uit dit archief.
+                <br>
+                - Maak de verbeelde archiefstukken met een beeldgeneratietool zoals DALL*E
+                <br>
+                - Train een GAN op de verzameling echte en verbeelde archiefstukken om beelden te kunnen genereren om het speculatieve archief op te bouwen.
+            </p>
 
-        <p class="geenAchtergrond">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate ac leo quis placerat. Aliquam
-            ullamcorper at dolor et tincidunt.
-            In sit amet imperdiet metus. Etiam fringilla suscipit luctus. Duis eget vehicula risus. Ut ut sem pretium,
-            condimentum quam eget, hendrerit
-            enim. Vestibulum interdum sem ac orci dapibus, sed dignissim libero venenatis. Phasellus mi metus, tempus eu
-            gravida at, hendrerit vitae
-            mauris. Quisque ac leo volutpat, sodales quam vitae, placerat eros. Vestibulum faucibus tempor maximus. Sed
-            fermentum elit ex, a venenatis
-            arcu egestas a. Praesent eu nisi auctor, tincidunt ante sit amet, lobortis nisl. Pellentesque convallis
-            imperdiet tristique.
-        </p>
+            
+  
+        </section>
+    </div>
     </main>
 </body>
 
+<script src="./scripts/accesibility.js"></script>
+<script src="./scripts/gradient.js"></script>
 <script src="./scripts/mouse.js"></script>
-
 
 </html>

@@ -1,30 +1,9 @@
 body {
     font-family: "Atkinson Hyperlegible", sans-serif;
+    color: white;
 }
 
 
 h1 {
     color: black;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-
-    font-size: 5em;
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-}
-
-h3 {
-    font-weight: 100;
-}
-
-p {
-    font-weight: bold;
-    font-size: 1.5em;
 }

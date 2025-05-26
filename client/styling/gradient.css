@@ -1,4 +1,4 @@
-section {
+.index section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,13 +20,15 @@ section {
   left: 0;
   width: 100%;
 
-
   min-height: 100%;
   z-index: -1;
+
+  background-color:hsla(229,44%,51%,1);
 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-blend-mode: color;
 }
 
 #texture {
@@ -37,12 +39,14 @@ section {
   min-height: 100%;
   z-index: -1;
 
-  background: url(/client/public/images/grain_texture.jpg);
+  background: url(grain_texture.png);
   /* filter: contrast(250%) brightness(250%); */
-  opacity: 0.3;
-  background-size: cover;
-  background-repeat: no-repeat;
+  opacity: .2;
+  background-size: '';
+  background-repeat: repeat;
   background-attachment: scroll;
+  ;
+  background-blend-mode: color;
 }
 
 /* h1 {
