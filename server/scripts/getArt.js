@@ -1,5 +1,3 @@
-
-
 const artList = document.querySelector(".artList");
 const filterDropdown = document.getElementById("filterDropdown");
 const sortDropdown = document.getElementById("sortDropdown");
@@ -9,7 +7,7 @@ let dataFilter = [];
 
 // Fetch de artist lijst van de JSON file
 function fetchArtists() {
-    fetch('./sources/artist_list.json')
+    fetch('client/public/sources/artist_list.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -61,13 +59,13 @@ function updateDisplay() {
         const artistName = item.ARTIST;
         const artName = item.ARTWORK_NAME || "Zonder titel";
         const artistLink = item.LINK || "#";
-        const artImg = item.img_url || "https://via.placeholder.com/300x300?text=No+Image";
+        const artImg = item.img_url || "";
         const artType = item.FORMAT || "";
 
         // toont de data op de pagina
         artList.insertAdjacentHTML("beforeend", `
             <li class="artistCard">
-                <a href="./detail_pagina.html">
+                <a href="/detail_pagina">
                 <img src="` + artImg + `">
                     <h2>${artName}</h2>
                     <h3>${artistName}</h3>

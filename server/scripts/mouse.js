@@ -1,6 +1,6 @@
 const hoverEffect = document.querySelectorAll(".hoverEffect");
 
-const colors = ["--colorPearlPink", "--colorLavenderSheen", "--colorSoftMint", "--colorGlowShadow"];
+const colors = ["--colorPearlBlue", "--colorLavenderSheen", "--colorSoftMint", "--colorGlowShadow"];
 
 
 hoverEffect.forEach(hoverEffect => {

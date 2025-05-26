@@ -24,6 +24,25 @@
   }
 }
 
+section>h1 {
+    font-size: 15rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    line-height: .7;
+    letter-spacing: -1.5vw;
+}
+
+section>p {
+    background-color: transparent;
+    color: black;
+
+}
+
+div > h2{
+    font-weight: 700;
+}
+
 body {
     width: 100%;
     display: grid;
@@ -209,8 +228,6 @@ input[type="checkbox"] {
     }
 }
 
-}
-
 .sortDropdown {
     display: flex;
     justify-content: center;
@@ -221,4 +238,3 @@ input[type="checkbox"] {
     font-size: 1rem;
     margin-left: 80%;
 }
-

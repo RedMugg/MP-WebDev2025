@@ -39,7 +39,7 @@
   min-height: 100%;
   z-index: -1;
 
-  background: url(/images/grain_texture.png);
+  background: url(grain_texture.png);
   /* filter: contrast(250%) brightness(250%); */
   opacity: .2;
   background-size: '';
@@ -49,14 +49,14 @@
   background-blend-mode: color;
 }
 
-h1 {
+/* h1 {
   font-size: 15rem;
     color: white;
     margin-bottom: 0.5rem;
     margin-top: 0;
     line-height: .7;
     letter-spacing: -1.5vw;
-}
+} */
 
 p {
   background-color: none;
