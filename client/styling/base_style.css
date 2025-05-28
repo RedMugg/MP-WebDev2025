@@ -6,10 +6,10 @@
     --colorHighlightWhite: rgba(255, 255, 255, 1);
     --colorAccesibilityBlock: rgba(170, 170, 170, 1);
     --colorGlowShadow: rgba(198, 181, 216, 1);
-    --colorBackgroundBlue: rgb(125, 134, 176);
+    --colorBackgroundBlue: rgb(175, 177, 185);
 
     * {
-        color: black;
+        color: rgb(59, 58, 58);
     }
 }
 

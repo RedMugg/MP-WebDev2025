@@ -22,11 +22,25 @@
   background-color: var(--colorPearlBlue) 0.5;
 }
 
+.homePageInfoSection {
+  display: flex;
+  justify-content: center;
+}
+
 .homePageInfo {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+
+  background-color: var(--colorAccesibilityBlock);
+  border-radius: 1em;
+  padding: 1em;
+
+  width: 80%;
+
+}
+
+.homePageInfo h2 {
+    margin-bottom: 1em;
 }
 
 #gradient {
@@ -86,9 +100,6 @@ h1 {
   letter-spacing: -1.5vw;
 }
 
-.homePageInfo h2 {
-  margin: 1em;
-}
 
 .homePageTitleText {
   display: flex;
