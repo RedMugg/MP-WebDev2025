@@ -1,14 +1,25 @@
 details {
-    grid-area: 3 / 2;
     display: flex;
     justify-content: end;
     align-items: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 2em;
+    padding: 1em;
+
+    background-color: var(--colorHighlightWhite);
+    border-radius: 1em;
+
     z-index: 20;
 }
 
 fieldset {
     border: 0;
-    margin: 0.2em 0;;
+    border-bottom: 1px solid var(--colorHighlightWhite);
+    margin: 0.5em 0;
+    padding: 0.3em 0;
 }
 
 summary {
@@ -23,6 +34,7 @@ summary {
 summary::before {
     content: "▶";
     transition: transform 1s ease;
+    transform-origin: center;
     margin-right: 0.5em;
     display: inline-block;
 }
@@ -34,20 +46,25 @@ details[open] summary::before {
 legend {
     font-weight: 700;
     font-size: 1em;
+
+    margin: 0.2em 0;
 }
 
-#voorkeurBlock {
+#accessibilityBlock {
     display: flex;
 
-    position:absolute;
-    bottom: 0;
+    position: absolute;
+    bottom: 3em;
+    right: 0;
+
+    width: 15rem;
 
     background-color: var(--colorPearlBlue);
     border: 1px solid var(--colorPearlBlue);
     border-radius: 1em;
 
     padding: 1rem;
-    margin: 1em;
+    margin: 1em 0;
 
     z-index: 2;
 }
@@ -56,10 +73,6 @@ legend {
 
 
 /* SLIDER */
-
- body {
-      transition: font-size 0.2s ease;
-    }
 
     .slider-container {
       margin-bottom: 20px;

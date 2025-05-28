@@ -10,7 +10,3 @@
 @import 'styling/detail_page.css';
 @import 'styling/gradient.css';
 
-/* component styling */
-body {
-  color: black;
-}
