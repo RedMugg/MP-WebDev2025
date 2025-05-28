@@ -1,6 +1,7 @@
 const allElements = document.querySelectorAll('body *');
 
 
+
 // Animaties uitzetten
 
 
@@ -48,11 +49,11 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
   const slider = document.getElementById('fontSlider');
   const label = document.getElementById('fontSizeLabel');
 
-    // Haalt de standaard lettergrootte op. 
+    // Haalt de standaard lettergrootte op vanuit de styling op het document. 
     allElements.forEach(el => {
       const style = window.getComputedStyle(el);
       const originalSize = parseFloat(style.fontSize);
-      el.setAttribute('data-original-font-size', originalSize);
+      el.setAttribute('data-base-font-size', originalSize);
     });
 
     // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
@@ -62,7 +63,7 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
     // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
     allElements.forEach(el => {
-    const original = parseFloat(el.getAttribute('data-original-font-size'));
+    const original = parseFloat(el.getAttribute('data-base-font-size'));
         el.style.fontSize = (original + newValue) + 'px';
       });
     });

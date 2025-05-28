@@ -1,6 +1,7 @@
-.index section {
+.homePageTitle {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   
   padding:0 1em;
@@ -8,10 +9,38 @@
   padding-top: 5em;
 }
 
-.aboutDiv {
-  display: flex;
 
-  font-size: 2vw;
+.homePageTitleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 1em;
+
+  background-color: var(--colorPearlBlue) 0.5;
+}
+
+.homePageInfoSection {
+  display: flex;
+  justify-content: center;
+}
+
+.homePageInfo {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--colorAccesibilityBlock);
+  border-radius: 1em;
+  padding: 1em;
+
+  width: 80%;
+
+}
+
+.homePageInfo h2 {
+    margin-bottom: 1em;
 }
 
 #gradient {
@@ -23,7 +52,17 @@
   min-height: 100%;
   z-index: -1;
 
-  background-color:hsla(229,44%,51%,1);
+  background-color: var(--colorBackgroundBlue);
+  background-image:
+    radial-gradient(at calc(var(--currentX, 0.5) * 30%) calc(var(--currentY, 0.5) * 80%), var(--colorPearlPink) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 100%) calc(var(--currentY, 0.5) * 50%), var(--colorPearlBlue) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 50%) calc(var(--currentY, 0.5) * 16.66%), var(--colorLavenderSheen) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 100%) calc(var(--currentY, 0.5) * 70%), var(--colorSoftMint) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 66.66%) calc(var(--currentY, 0.5) * 50%), var(--colorHighlightWhite) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 50%) calc(var(--currentY, 0.5) * 160%), var(--colorAccesibilityBlock) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 0%) calc(var(--currentY, 0.5) * 100%), var(--colorGlowShadow) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, 0.5) * 50%) calc(var(--currentY, 0.5) * 200%), var(--colorGlowShadow) 0px, transparent 50%),
+    radial-gradient(at calc(var(--currentX, -6) * 20%) calc(var(--currentY, 0.5) * 180%), var(--colorGlowShadow) 0px, transparent 100%);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +70,7 @@
   background-blend-mode: color;
 }
 
-#texture {
+#backgroundTexture {
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +78,8 @@
   min-height: 100%;
   z-index: -1;
 
-  background: url(/dist/images/grain_texture.png);
+  background: url(grain_backgroundTexture.png);
+
   /* filter: contrast(250%) brightness(250%); */
   opacity: .2;
   background-size: '';
@@ -49,15 +89,58 @@
   background-blend-mode: color;
 }
 
-/* h1 {
+h1 {
   font-size: 15rem;
-    color: white;
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-    line-height: .7;
-    letter-spacing: -1.5vw;
-} */
+  font-weight: bold;
 
-p {
-  background-color: none;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin: .2em;
+
+  line-height: .7;
+  letter-spacing: -1.5vw;
 }
+
+
+.homePageTitleText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1em;
+}
+
+.homePageTitleText :nth-child(1) {
+  display: flex;
+  align-self: start;
+  transform: rotate(8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.homePageTitleText :nth-child(2) {
+  margin: 0 auto;
+  transform: rotate(-8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.homePageTitleText :nth-child(3) {
+  display: flex;
+  align-self: end;
+  transform: rotate(8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+  top: -1em;
+}
+
+.homePageTitleText:hover :nth-child(1) {
+  transform: scale(1.2);
+}
+
+.homePageTitleText:hover :nth-child(2) {
+  transform: scale(1.2);
+}
+
+.homePageTitleText:hover :nth-child(3) {
+  transform: scale(1.2);
+}
+
