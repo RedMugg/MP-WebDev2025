@@ -1,0 +1,47 @@
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 2cm;
+      }
+    /* Alleen elementen die je echt wilt verbergen */
+    header,
+    footer,
+    nav,
+    button,
+    .printBtn,
+    .oefeningSectie,
+    .kunstwerkSectie,
+    .tweedeContainer,
+    #gradient,
+    #texture {
+      display: none ;
+    }
+
+    /* geen scroll balk */
+    html, body, main, .content, .detailPage {
+        overflow: visible;
+        height: auto;
+        max-height: none;
+      }
+  
+    body {
+      background: white;
+      color: black;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 12pt;
+      line-height: 1.6;
+    }
+  
+    .naamKunst,
+    .naamKunstenaar,
+    .hoofdKunstwerk,
+    .beschrijving {
+      display: block;
+      visibility: visible;
+    }
+  
+    h1, h2, p, img {
+      page-break-inside: avoid;
+    }
+  }
+  

@@ -1,0 +1,85 @@
+@media print {
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 2cm;
+    }
+  
+    body {
+      writing-mode: horizontal-tb;
+      transform: rotate(0deg); /* Zorgt dat tekst niet onbedoeld draait */
+    }
+  
+    /* ... de rest van je bestaande print-CSS blijft hier staan ... */
+  }
+  
+  /* Verberg alles standaard */
+  * {
+    display: none ;
+    visibility: hidden ;
+  }
+
+  /* Verberg specifiek de header */
+  header {
+    display: none ;
+    visibility: hidden ;
+  }
+
+  /* Alles wat je zichtbaar wíl hebben */
+  html,
+  body,
+  main.detailPage,
+  .content,
+  .topSectie,
+  .beschrijving,
+  .beschrijving *,
+  .naamKunst,
+  .naamKunstenaar,
+  .hoofdKunstwerk {
+    display: block ;
+    visibility: visible ;
+    position: relative ;
+  }
+
+  body {
+    margin: 2cm;
+    background: white ;
+    color: black ;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+
+  .naamKunst {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: black ;
+  }
+
+  .naamKunstenaar {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black ;
+  }
+
+  .hoofdKunstwerk {
+    max-width: 100%;
+    height: auto ;
+    object-fit: contain ;
+    margin-bottom: 1rem;
+  }
+
+  .beschrijving {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .beschrijving p {
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  h1, h2, p, img {
+    page-break-inside: avoid;
+  }
+}

@@ -10,6 +10,8 @@
 @import 'styling/detail_page.css';
 @import 'styling/gradient.css';
 
+/* print sheet */
+@import 'styling/print_sheet.css';
 /* component styling */
 body {
   color: black;
