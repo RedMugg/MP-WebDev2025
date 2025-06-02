@@ -1,4 +1,4 @@
-details {
+.headerAccessibilityMenu {
     display: flex;
     justify-content: end;
     align-items: end;
@@ -22,7 +22,7 @@ fieldset {
     padding: 0.3em 0;
 }
 
-summary {
+.headerAccesibilityMenuTitle {
     list-style: none;
     cursor: pointer;
     display: list-item;
@@ -31,16 +31,20 @@ summary {
     font-weight: 300;
 }
 
-summary::before {
+.headerAccesibilityMenuTitle::before {
+    display: inline-block;
+
     content: "▶";
+    margin: .2em;
+    	
+
     transition: transform 1s ease;
     transform-origin: center;
-    margin-right: 0.5em;
-    display: inline-block;
+    transform: rotate(90deg);
 }
 
-details[open] summary::before {
-    transform: rotate(180deg);
+.headerAccessibilityMenu[open] .headerAccesibilityMenuTitle::before {
+    transform: rotate(270deg);
 }
 
 legend {
@@ -64,7 +68,7 @@ legend {
     border-radius: 1em;
 
     padding: 1rem;
-    margin: 1em 0;
+    margin: 1.5em 0;
 
     z-index: 2;
 }

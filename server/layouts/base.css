@@ -1,4 +1,4 @@
-header {
+/* header {
     grid-column: 1/2;
     justify-self: stretch;
     height: 100vh;
@@ -9,9 +9,9 @@ header {
     grid-template-rows: repeat(3, 1fr);
 
     transition: .4s, background-position 0s;
-}
+} */
 
-header ul {
+/* header ul {
     position: relative;
     grid-column: 1/4;
     grid-row: 1/4;
@@ -22,7 +22,7 @@ header ul {
 
     padding: 25px;
     overflow: hidden;
-    background-color: var(--colorAccesibilityBlock);
+    background-color: var(--colorLavenderSheen);
 }
 
 header ul::after {
@@ -55,6 +55,39 @@ header li {
 
 header li:hover {
     color: #fff;
+} */
+
+.headerCollapsNavBar[open] {
+  height: 100%;
+}
+
+.headerNavBarIcon {
+  padding: .3em;
+  margin: 0 .3em;
+  
+  border-bottom: 1px solid black;
+  
+  list-style: none;
+  cursor: pointer;
+  
+  font-size: 2em;
+}
+
+.headerNavBarIcon::before {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.headerNavBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  height: 100%;
+  
+  margin-left: 2em;
+  padding: 2em;
 }
 
 header a {

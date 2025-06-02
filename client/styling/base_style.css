@@ -1,11 +1,11 @@
 :root {
-    --colorPearlPink: rgba(246, 197, 211, 1);
-    --colorPearlBlue: rgba(174, 226, 247, 1);
-    --colorLavenderSheen: rgba(213, 199, 247, 1);
-    --colorSoftMint: rgba(191, 244, 235, 1);
+    --colorPearlPink: rgb(255, 149, 179);
+    --colorPearlBlue: rgb(139, 221, 253);
+    --colorLavenderSheen: rgb(185, 157, 252);
+    --colorSoftMint: rgb(141, 244, 227);
     --colorHighlightWhite: rgba(255, 255, 255, 1);
-    --colorAccesibilityBlock: rgba(170, 170, 170, 1);
-    --colorGlowShadow: rgba(198, 181, 216, 1);
+    --colorAccesibilityBlock: rgb(230, 225, 225);
+    --colorGlowShadow: rgb(177, 140, 216);
     --colorBackgroundBlue: rgb(175, 177, 185);
 
     * {
@@ -14,7 +14,7 @@
 }
 
 :root[data-color-scheme="dark"] {
-    --colorPearlPink: rgba(156, 87, 104, 1);  
+    --colorPearlPink: rgb(213, 117, 141);  
     --colorPearlBlue: rgba(72, 125, 147, 1);      
     --colorLavenderSheen: rgba(115, 100, 143, 1);  
     --colorSoftMint: rgba(85, 148, 138, 1);        
@@ -23,7 +23,7 @@
     --colorGlowShadow: rgba(92, 78, 108, 0.6);
     --backgroundDark: #1a1a1d;
     --surfaceDark: #2a2a2e;
-    --colorBackgroundBlue: hsla(229,44%,51%,1);
+    --colorBackgroundBlue: rgb(53, 65, 126);
   
   * {
     color: white;
@@ -51,11 +51,12 @@ div > h2{
 
 body {
     width: 100%;
-    display: grid;
-    grid-template-columns: .25fr 1fr;
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: .25fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; */
 
     margin: 0;
     padding: 0;
@@ -70,7 +71,7 @@ body {
 );
 }
 
-header {
+/* header {
     grid-column: 1/2;
     justify-self: stretch;
     height: 100vh;
@@ -78,7 +79,10 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+} */
 
+header {
+    background-color: white
 }
 
 main {
@@ -89,6 +93,10 @@ main {
 
 footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--colorHighlightWhite);
 }
 
 
