@@ -19,24 +19,23 @@ function fetchArtists() {
         .then(data => {
             // dataFilter = data.filter(data => data.ARTIST && data.ARTIST.trim() !== "");
             data.forEach(data => {
-                let unsplitInput = data.excerpt.rendered;
                 let unsplitLong = data.content.rendered;
                 
-                let splitLong = unsplitLong.replace('\n<h2 class=\"wp-block-heading is-style-default\">', "").replace('</h2>', "").replace('<figure class="wp-block-image size-large"><img decoding="async" src="', "").replace('" alt=""/><figcaption class="wp-element-caption">', "").replace('</figcaption></figure>', "").replace(/<p>/g, "").replace('</p>', "").replace(/\n\n\n\n/g, "");
+                let splitLong = unsplitLong.replace('\n<h2 class=\"wp-block-heading is-style-default\">', "").replace('</h2>', "").replace('<figure class="wp-block-image size-large"><img decoding="async" src="', "").replace('</p>', "").replace('" alt=""/><figcaption class="wp-element-caption">', "").replace('</figcaption></figure>', "").replace(/<p>/g, "").replace('<p class=\"is-style-text-annotation is-style-text-annotation--1\">', "").replace("</p></p></p>\n", "").replace(/\n\n\n\n/g, "").replace('<a href=\"https://www.cyberneticforests.com/online-portfolio\">', "").replace('</a>', "");
                 splitLong = splitLong.split("|");
-                const splitInput = unsplitInput.replace(/<p>/g, "").replace("|</p>\n", "").split('| ');
                 
-                console.log(splitLong);
                 const itemID = data.id;
                 const itemTitle = data.title.rendered;
-                const itemArtist = splitInput[0];
-                const itemType = splitInput[1];
-                const itemDescription = splitInput[2];
-                const itemExercise = splitInput[3];
+                const itemArtist = splitLong[1];
+                const itemImage = splitLong[2];
+                const itemAlt = splitLong[3];
+                const itemType = splitLong[5];
+                const itemDescription = splitLong[7];
+                const itemExercise = splitLong[9];
+                const itemLink = splitLong[11];
 
-                let newArt = {id: itemID, title: itemTitle, artist: itemArtist, type: itemType, description: itemDescription, exercise: itemExercise};
+                let newArt = {id: itemID, title: itemTitle, artist: itemArtist, type: itemType, description: itemDescription, exercise: itemExercise, alt: itemAlt, image: itemImage, link: itemLink};
                 convertedList.push(newArt);
-
             }) 
             updateDisplay();
         })
@@ -80,15 +79,16 @@ function updateDisplay() {
     filtered.forEach(item => {
         const artistName = item.artist;
         const artName = item.title || "Zonder titel";
-        const artistLink = item.LINK || "#";
-        const artImg = item.img_url || "";
+        const artistLink = item.link || "#";
+        const artImg = item.image || "";
+        const artAlt = item.alt || "";
         const artType = item.type || "";
 
         // toont de data op de pagina
         artList.insertAdjacentHTML("beforeend", `
             <li class="artistCard">
                 <a href="/detail_pagina">
-                <img src="` + artImg + `">
+                <img src="` + artImg + `" alt="` + artAlt + `">
                     <h2>${artName}</h2>
                     <h3>${artistName}</h3>
                     <p>${artType}</p>
