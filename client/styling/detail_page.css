@@ -1,172 +1,193 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
- 
-.detailPage {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-}
- 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  padding: 2rem;
-}
- 
- 
-/*  oefening sectie */
- 
-.oefeningSectie {
-  display: flex;
-  justify-content: start;
-  width: 80vw;
-  top: 0;
-  padding: 1rem;
-  gap: 2em;
-}
- 
- 
-.oefeningSectie a::after {
-  font-family: "Font Awesome 6 Free";
-  /* of "Font Awesome 5 Free" voor oudere versies */
-  font-weight: 900;
-  /* nodig voor solid icons */
-  content: "\f02d";
-  /* Unicode voor bv. fa-user */
-  margin-left: 0.5rem;
-}
- 
- 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .detailPage {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2rem;
+  }
+
+
+  /*  oefening sectie */
+
+  .oefeningSectie {
+    display: flex;
+    justify-content: start;
+    width: 80vw;
+    top: 0;
+    padding: 1rem;
+    gap: 2em;
+  }
+
+
+
+  .oefeningSectie a::after {
+    font-family: "Font Awesome 6 Free"; /* of "Font Awesome 5 Free" voor oudere versies */
+    font-weight: 900; /* nodig voor solid icons */
+    content: "\f02d"; /* Unicode voor bv. fa-user */
+    margin-left: 0.5rem;
+  }
+
+  
 .oefeningSectie a:nth-of-type(2)::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  content: "\f02e";
-  /* fa-bell */
+  content: "\f02e"; /* fa-bell */
   margin-left: 0.5rem;
 }
- 
+  
 /* top sectie */
-.topSectie {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
- 
- 
-.beschrijving {
-  display: flex;
+  .topSectie {
+    
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;  
+  }
+  
+
+  .beschrijving {
+    display: flex;
   flex-direction: column;
   grid-gap: 2em;
-  line-height: 1.8;
-  color: #222;
-  width: auto;
-}
- 
-/* Afbeelding */
-.hoofdKunstwerk {
-  width: auto;
-  object-fit: cover;
-  border-radius: 15px;
-}
- 
-.naamKunstenaar {
-  font-size: 40px;
-  color: var(--colorSunsetOrange);
- 
- 
-}
- 
-.naamKunst {
-  font-size: 90px;
-  font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
-  color: black;
-  margin-bottom: 0.5rem;
-  line-height: .7;
-  letter-spacing: -5px;
-  margin-left: 0;
-}
- 
- 
-/* Kunstwerk sectie */
-/* Tekst opmaak */
-.kunstwerkSectie {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 1rem;
-  border: 2px solid var(--colorBubbleBlue);
-  border-radius: 15px;
-  padding: 10px;
-  background-color: var(--colorSoftMint);
-}
- 
- 
- 
-.textContainer {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-  gap: 2em;
-  border-radius: 15px;
-  
- 
- 
-}
- 
-.tweedeContainer {
-  /* background-color: var(--PlasmaRose); */
-  background-color: var(--colorSunsetOrange);
-}
- 
-.textContainer p {
-  font-size: 1.2rem;
-  /* background-color: var(--colorTurquoiseWave); */
-  max-width: 1000px;
-  line-height: 30px;
-}
- 
-.detailPage a {
-  background-color: var(--colorHighlightWhite);
-  padding: 1em;
-  color: black;
-  border-radius: 2em;
-  width: fit-content;
-}
+    line-height: 1.8;
+    color: #222;
+    width: 65%;
+  }
 
-.textContainer h2 {
-  font-size: 2.5rem;
-  color: #0c0c0c;
-}
+  /* Afbeelding */
+  .hoofdKunstwerk {
+    width: 35%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .naamKunstenaar {
+    font-size: 4vw;
+    color: var(--colorSunsetOrange);  
+
+
+  }
+
+  .naamKunst {
+    font-size: 15vw;
+    font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
+    color: black;
+    margin-bottom: 0.5rem;
+    line-height: .7;
+    letter-spacing: -1.5vw;
+  }
+  
+
+  /* Kunstwerk sectie */
+  /* Tekst opmaak */
+  .kunstwerkSectie {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    border: 2px solid var(--colorBubbleBlue);
+    border-radius: 15px;
+  }
+
+
+  
+  .textContainer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 15px;
+    padding: 2em;
+
+  
+  }
+
+.tweedeContainer {
+    /* background-color: var(--PlasmaRose); */
+    background-color: var(--colorSunsetOrange);
+  }
+
+  .textContainer p {
+    font-size: 1.2rem;
+    color: #0c0c0c;
+    /* background-color: var(--colorTurquoiseWave); */
+    max-width: 1000px;
+  }
+
+  .detailPage a {
+    background-color: var(--colorSunsetOrange);
+    padding: 1em;
+    color: white;
+    border-radius: 2em;
+    width: fit-content;
+  }
+
+  .tweedeContainer p {
+   color: white;
+  }
+
+
+  .oefeningSectie a:first-child {
+    background-color: var(--colorBubbleBlue);
+    color: #fff;
+
+    }
+    .oefeningSectie a:nth-of-type(2) {
+      background-color: var(--colorPlasmaRose); 
+      color: white;
+    }
+
+
+
+
+
+  .textContainer h2 {
+    font-size: 2.5rem;
+    color: #0c0c0c;
+  }
+
+
+  .tweedeContainer h2 {
+    color: white;
+   }
  
- 
-.imageContainerMainArt {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
- 
+
+
+  .imageContainerMainArt {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+
 .imageContainerMainArt img {
   border-radius: 15px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
-@media (max-width: 1200px) {
- 
+  
+@media (max-width: 1200px)  {
   /* Tablet-specifieke stijlen hier */
   .kunstwerkSectie {
     flex-direction: column;
   }
- 
+
   .detailPage p {
-    font-size: 16px;
+  font-size: 16px;
   }
 }

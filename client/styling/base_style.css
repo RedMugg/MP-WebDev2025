@@ -1,14 +1,12 @@
 :root {
-    --colorPearlPink: hsla(346,89%,77%,1);
-    --colorPearlBlue: hsla(327,97%,70%,1);
-    --colorLavenderSheen: hsla(217,85%,76%,1);
-    --colorSoftMint: hsla(201,87%,65%,1);
-    --colorHighlightWhite: hsla(30,81%,67%,1);
-    --colorAccesibilityBlock: hsl(205.8deg 100% 83.25%);
-    --colorGlowShadow: hsla(169,91%,65%,1);
-    --colorBackgroundBlue: hsla(287,74%,66%,1);
-
-    --gradientBack: 	hsla(129, 100%, 80%, 1);
+    --colorPearlPink: rgba(246, 197, 211, 1);
+    --colorPearlBlue: rgba(174, 226, 247, 1);
+    --colorLavenderSheen: rgba(213, 199, 247, 1);
+    --colorSoftMint: rgba(191, 244, 235, 1);
+    --colorHighlightWhite: rgba(255, 255, 255, 1);
+    --colorAccesibilityBlock: rgba(170, 170, 170, 1);
+    --colorGlowShadow: rgba(198, 181, 216, 1);
+    --colorBackgroundBlue: rgb(175, 177, 185);
 
     * {
         color: rgb(59, 58, 58);
@@ -16,18 +14,16 @@
 }
 
 :root[data-color-scheme="dark"] {
-    --colorPearlPink: hsla(305,52%,49%,1);  
-    --colorPearlBlue: hsla(310,49%,33%,1);      
-    --colorLavenderSheen: hsla(174,40%,45%,1);  
-    --colorSoftMint: hsla(229,70%,27%,1);        
-    --colorHighlightWhite: hsla(229,53%,35%,1);
-    --colorAccesibilityBlock: hsla(285,48%,50%,1);
-    --colorGlowShadow: hsla(205,52%,59%,1);
+    --colorPearlPink: rgba(156, 87, 104, 1);  
+    --colorPearlBlue: rgba(72, 125, 147, 1);      
+    --colorLavenderSheen: rgba(115, 100, 143, 1);  
+    --colorSoftMint: rgba(85, 148, 138, 1);        
+    --colorHighlightWhite: rgb(133, 164, 175);
+    --colorAccesibilityBlock: rgba(150, 150, 170, 1);
+    --colorGlowShadow: rgba(92, 78, 108, 0.6);
     --backgroundDark: #1a1a1d;
     --surfaceDark: #2a2a2e;
     --colorBackgroundBlue: hsla(229,44%,51%,1);
-
-    --gradientBack: hsla(264,40%,17%,1);
   
   * {
     color: white;
@@ -95,6 +91,8 @@ footer {
     display: flex;
 }
 
+
+
 /* BASE ITEMS */
 
 p {
@@ -152,7 +150,7 @@ button {
     padding: 0.5em 1em;
     margin-bottom: 0.5em;
 
-    background-color: var(--colorHighlightWhite);
+    background-color: white;
     border-radius: 1em;
 }
 
