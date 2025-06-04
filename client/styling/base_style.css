@@ -180,20 +180,27 @@ input[type="checkbox"] {
 }
 
 /* SORT DROPDOWN */
+.overviewFilterSelects {
+    display: flex;
+
+    background-color: var(--colorLavenderSheen);
+    border-bottom: 1px solid black;
+
+    padding: 0.3em 5em;
+}
 
 .sortDropdown {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 7dvh;
-    padding: 1dvh 1dvw;
+    margin: .7em;
+    padding: .5em;
     background-color: var(--colorHighlightWhite);
     border: 1px solid var(--colorPearlBlue);
 
     border-radius: 2dvh;
-    font-size: 1rem;
-    margin-left: 80%;
+    font-size: 0.9em;
 }
 
 
