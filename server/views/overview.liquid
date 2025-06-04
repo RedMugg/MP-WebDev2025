@@ -11,7 +11,7 @@
             <option value="artist-desc">Artiest Z-A</option>
             <option value="artwork-asc">Kunstwerk A-Z</option>
             <option value="artwork-desc">Kunstwerk Z-A</option>
-          </select> 
+          </select>
           
           <select id="filterDropdown" class="sortDropdown">
             <option value="all">Alle media</option>
@@ -24,7 +24,8 @@
 
 
         <section>
-            <ul class="artList">
+          <div id="thumbnail-container"></div>
+            <ul class="artList" id="artList">
 
             </ul>
         </section>
@@ -36,5 +37,6 @@
     </footer>
 </body>
 
-        <script src="/server/scripts/getArt.js"></script>
+        {%- comment -%} <script src="server/scripts/getArt.js"></script> {%- endcomment -%}
+        <script src="server/scripts/randomArt.js"></script>
 {% endblock %}
