@@ -44,3 +44,22 @@
     color: var(--colorHotPink);
     color: black;
 }
+
+/* Random art */
+
+#thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  
+  canvas {
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 240px !important;
+    height: 240px !important;
+    border: 2px solid #000;
+  }
+  

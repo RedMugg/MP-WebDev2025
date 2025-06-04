@@ -64,7 +64,7 @@ function updateDisplay() {
 
         // toont de data op de pagina
         artList.insertAdjacentHTML("beforeend", `
-            <li class="artistCard">
+            <li class="artistCard" id="artistCard">
                 <a href="/detail_pagina">
                 <img src="` + artImg + `">
                     <h2>${artName}</h2>
@@ -73,7 +73,7 @@ function updateDisplay() {
                 </a>
             </li>
         `);
-    });
+    }});
 }
 
 // Event listeners voor de filter en sort dropdowns
