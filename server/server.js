@@ -40,8 +40,12 @@ app.engine('liquid', engine.renderFile)
     res.send(html);
   })
   
-
-
+    //favorites pagina
+  .get('/favorites', async (req, res) => {
+    const html = await renderTemplate('favorites');
+    res.send(html);
+  })
+  
   
 
   .listen(3000, () => {
