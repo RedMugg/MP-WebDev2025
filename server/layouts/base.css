@@ -1,11 +1,18 @@
+header {
+
+  z-index: 10;
+}
+
 #headerNavigationDetail {
   overflow: hidden;
+
+  height: 100%;
 }
 
 #headerNavigationDetail::details-content {
   background-color: var(--colorLavenderSheen);
   
-  height: 100vh;
+  height: 100%;
   width: 0;
   transition: 
     width 0.5s,

@@ -1,18 +1,50 @@
+* {
+  interpolate-size: allow-keywords;
+}
+
 .headerAccessibilityMenu {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    margin: 2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: var(--colorLavenderSheen);
+
+  border-radius: 1em;
+  margin: 2em;
+  padding: 1em;
+
+  z-index: 20;
+}
+
+.headerAccessibilityMenu::details-content {
+  position: absolute;
+  bottom: 100%; 
+  right: 0;
+
+  margin: 0.5em 0;
+
+  background-color: var(--colorLavenderSheen);
+  border-radius: 0.5em;
+  overflow: hidden;
+
+  width: 12rem;
+  block-size: 0;
+  content-visibility: hidden;
+
+  transition:
+    block-size 0.5s ease,
+    content-visibility 0.6s;
+  transition-behavior: allow-discrete;
+}
+
+.headerAccessibilityMenu[open]::details-content {
     padding: 1em;
-
-    background-color: var(--colorHighlightWhite);
-    border-radius: 1em;
-
-    z-index: 20;
+    block-size: auto; 
+    content-visibility: visible;
 }
 
 fieldset {
@@ -23,6 +55,9 @@ fieldset {
 }
 
 .headerAccesibilityMenuTitle {
+    background-color: var(--colorLavenderSheen);
+    border-radius: 1em;
+
     list-style: none;
     cursor: pointer;
     display: list-item;
@@ -49,29 +84,11 @@ fieldset {
 
 legend {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.5em;
 
     margin: 0.2em 0;
 }
 
-#accessibilityBlock {
-    display: flex;
-
-    position: absolute;
-    bottom: 3em;
-    right: 0;
-
-    width: 15rem;
-
-    background-color: var(--colorPearlBlue);
-    border: 1px solid var(--colorPearlBlue);
-    border-radius: 1em;
-
-    padding: 1rem;
-    margin: 1.5em 0;
-
-    z-index: 2;
-}
 
 
 

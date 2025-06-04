@@ -31,7 +31,7 @@
 }
 
 * {
-  interpolate-size: allow-keywords;
+    interpolate-size: allow-keywords;
 }
 
 section>h1 {
@@ -54,13 +54,9 @@ div > h2{
 }
 
 body {
-    width: 100%;
-    /* display: grid; */
     display: flex;
-    /* grid-template-columns: .25fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
+
+    width: 100%;
 
     margin: 0;
     padding: 0;
