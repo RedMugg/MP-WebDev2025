@@ -22,7 +22,8 @@ function fetchArtists() {
                 let unsplitInput = data.excerpt.rendered;
                 let unsplitLong = data.content.rendered;
                 
-                const splitLong = unsplitLong.replace('\n<h2 class=\"wp-block-heading is-style-default\">', "").replace('</h2>', "").replace('<figure class="wp-block-image size-large"><img decoding="async" src="', "").replace('" alt=""/><figcaption class="wp-element-caption">', "").replace('</figcaption></figure>', "").replace(/<p>/g, "").replace(/<p>/g, "");
+                let splitLong = unsplitLong.replace('\n<h2 class=\"wp-block-heading is-style-default\">', "").replace('</h2>', "").replace('<figure class="wp-block-image size-large"><img decoding="async" src="', "").replace('" alt=""/><figcaption class="wp-element-caption">', "").replace('</figcaption></figure>', "").replace(/<p>/g, "").replace('</p>', "").replace(/\n\n\n\n/g, "");
+                splitLong = splitLong.split("|");
                 const splitInput = unsplitInput.replace(/<p>/g, "").replace("|</p>\n", "").split('| ');
                 
                 console.log(splitLong);
