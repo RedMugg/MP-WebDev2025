@@ -16,6 +16,13 @@ const renderTemplate = async (template, data) => {
 
 const app = new App();
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
+
 app.engine('liquid', engine.renderFile)
   .use(logger())
   .use('/client', sirv('client'))
