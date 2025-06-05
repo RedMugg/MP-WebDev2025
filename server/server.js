@@ -47,3 +47,4 @@ app.engine('liquid', engine.renderFile)
   .listen(3000, () => {
     console.log('Server draait op http://localhost:3000');
   });
+

@@ -8,15 +8,16 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
+  width: 100%;
 }
  
 .content {
   display: flex;
   flex-direction: column;
-  gap: 3em;
-  padding: 2rem;
-}
+  justify-content: center;
+  align-items: center;
  
+}
  
 /*  oefening sectie */
  
@@ -26,7 +27,7 @@
   width: 80vw;
   top: 0;
   padding: 1rem;
-  gap: 2em;
+
 }
  
  
@@ -52,33 +53,60 @@
 /* top sectie */
 .topSectie {
   width: 100%;
+  height: 80vh;
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
+ 
+}
+
+.topSectie a, .textContainer a {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
  
  
 .beschrijving {
+  flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  grid-gap: 2em;
-  line-height: 1.8;
   color: #222;
   width: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.beschrijving h1 {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.beschrijving h2 {
+  font-weight: 100;
+font-size: 1rem;
+font-size: 16px;
+}
+
+.beschrijving p {
+  line-height: 1.8;
+}
+
+
+.detailPage h1, h2, p {
+  text-align: center;
 }
  
 /* Afbeelding */
 .hoofdKunstwerk {
-  width: auto;
+  width: 50%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 15px;
 }
  
 .naamKunstenaar {
   font-size: 40px;
   color: var(--colorSunsetOrange);
- 
- 
 }
  
 .naamKunst {
@@ -95,31 +123,48 @@
 /* Kunstwerk sectie */
 /* Tekst opmaak */
 .kunstwerkSectie {
+  backdrop-filter: blur(20px);
   display: flex;
-  flex-direction: row;
+height: fit-content;
+  flex-direction: column;
   width: 100%;
   gap: 1rem;
   border: 2px solid var(--colorBubbleBlue);
-  border-radius: 15px;
   padding: 10px;
-  background-color: var(--colorSoftMint);
+  border-top: 1px solid white;
+ align-items: center;
+ padding-bottom: 100px;
+
 }
  
  
  
 .textContainer {
-  width: 100%;
+  margin-top: 4rem;
+  width: 80%;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
   border-radius: 15px;
-  
- 
- 
+
 }
  
+.threeImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+ 
+.threeImageContainer img {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+}
+
 .tweedeContainer {
   /* background-color: var(--PlasmaRose); */
   background-color: var(--colorSunsetOrange);
@@ -133,9 +178,9 @@
 }
  
 .detailPage a {
-  background-color: var(--colorHighlightWhite);
+
   padding: 1em;
-  color: black;
+
   border-radius: 2em;
   width: fit-content;
 }
@@ -162,11 +207,93 @@
 @media (max-width: 1200px) {
  
   /* Tablet-specifieke stijlen hier */
-  .kunstwerkSectie {
-    flex-direction: column;
-  }
+
  
   .detailPage p {
     font-size: 16px;
   }
 }
+
+
+    .open-btn {
+      display: block;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50px;
+    }
+
+    /* Pop-up achtergrond */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Pop-up venster */
+    .popup-content {
+      background: rgb(8, 8, 41);
+      padding: 30px;
+      border-radius: 12px;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* Sluitknop */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+     .popup-content h2 {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 1em;
+        }
+
+    .popup-content p {
+      text-align: left;
+      line-height: 1.5;
+      
+    }
+
+    article h1, article h2 {
+      margin-top: 1.5em;
+    }
+
+    blockquote {
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 4px solid #aaa;
+      font-style: italic;
+    }
+
+
+
+    .popup-content li {
+      list-style-type: decimal; 
+    }
+
+    @media (max-height: 500px) {
+      .popup-content {
+        padding: 15px;
+      }
+    }
