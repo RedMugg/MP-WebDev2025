@@ -88,11 +88,6 @@ footer {
 
 
 /* BASE ITEMS */
-
-p {
-    max-width: 80%;
-}
-
 a {
     color: inherit;
     text-decoration: none;
