@@ -10,7 +10,7 @@ header {
 }
 
 #headerNavigationDetail::details-content {
-  background-color: var(--colorLavenderSheen);
+  background-color: var(--colorHighlightWhite);
   
   height: 100%;
   width: 0;
@@ -25,12 +25,12 @@ header {
 }
 
 .headerNavBarIcon {
+  background-color: var(--colorHighlightWhite);
+  
   position: relative;
   padding: 1rem;
   margin: 0;
-  
-  background-color: var(--colorLavenderSheen);
-  border-bottom: 1px solid black;
+
   
   list-style: none;
   cursor: pointer;
@@ -60,4 +60,7 @@ header a {
     padding: 0.5em;
 }
 
+.artList {
+  padding-top: 4em;
+}
 

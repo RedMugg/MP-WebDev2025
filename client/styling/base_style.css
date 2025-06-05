@@ -182,11 +182,13 @@ input[type="checkbox"] {
 /* SORT DROPDOWN */
 .overviewFilterSelects {
     display: flex;
+    position: fixed;
 
-    background-color: var(--colorLavenderSheen);
-    border-bottom: 1px solid black;
+    width: 100%;
 
     padding: 0.3em 5em;
+
+    z-index: 10;
 }
 
 .sortDropdown {
@@ -197,10 +199,27 @@ input[type="checkbox"] {
     margin: .7em;
     padding: .5em;
     background-color: var(--colorHighlightWhite);
-    border: 1px solid var(--colorPearlBlue);
 
     border-radius: 2dvh;
     font-size: 0.9em;
+}
+
+option {
+    background-color: var(--colorHighlightWhite);
+}
+
+.sortDropdown,
+::picker(select) {
+  appearance: base-select;
+}
+
+.sortDropdown::picker-icon {
+  color: #999;
+  transition: 0.4s rotate;
+}
+
+.sortDropdown:open::picker-icon {
+  rotate: 180deg;
 }
 
 
