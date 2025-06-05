@@ -118,3 +118,5 @@ document.querySelector('form').addEventListener('click', function() {
 if (storedColorMode) {
   applyTheme(storedColorMode);
 }
+
+// OPSLAAN IN FAVORIETEN
