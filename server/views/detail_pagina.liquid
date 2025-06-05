@@ -2,6 +2,12 @@
 
 {% block content %}
 
+  <link
+    href="../../client/styling/print_sheet.css"
+    media="print"
+    rel="stylesheet" />
+
+
   <main class="detailPage">
 
     <div id="gradient" class="gradient-bg"></div>
@@ -22,15 +28,19 @@
         </div>
 
 
-        <img src="/client/public/images/enkele_bloem.png" alt="hoofdKunstwerk" class="hoofdKunstwerk">
+        <img
+          src="/client/public/images/enkele_bloem.png"
+          alt="hoofdKunstwerk"
+          class="hoofdKunstwerk">
       </section>
 
       <section class="kunstwerkSectie">
         <div class="textContainer">
           <h2>
             Once upon a garden</h2>
-          <p>
+          <p class="beschrijvingKunstwerk">
             Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig
+ 
                                                                                                                                                                 tot
                                                                                                                                                                 geen
                                                                                                                                                                 gegevens hebben en die
@@ -68,7 +78,6 @@
           <br>
           - Train een GAN op de verzameling echte en verbeelde archiefstukken om beelden te kunnen genereren om het speculatieve archief op te bouwen.
         </p>
-
 
 
       </section>
