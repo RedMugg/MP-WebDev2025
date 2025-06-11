@@ -1,12 +1,14 @@
 :root {
-    --colorPearlPink: rgb(255, 149, 179);
-    --colorPearlBlue: rgb(139, 221, 253);
-    --colorLavenderSheen: rgb(185, 157, 252);
-    --colorSoftMint: rgb(141, 244, 227);
-    --colorHighlightWhite: rgba(255, 255, 255, 1);
-    --colorAccesibilityBlock: rgb(230, 225, 225);
-    --colorGlowShadow: rgb(177, 140, 216);
-    --colorBackgroundBlue: rgb(175, 177, 185);
+    --colorPearlPink: hsla(346,89%,77%,1);
+    --colorPearlBlue: hsla(327,97%,70%,1);
+    --colorLavenderSheen: hsla(217,85%,76%,1);
+    --colorSoftMint: hsla(201,87%,65%,1);
+    --colorHighlightWhite: hsla(30,81%,67%,1);
+    --colorAccesibilityBlock: hsl(205.8deg 100% 83.25%);
+    --colorGlowShadow: hsla(169,91%,65%,1);
+    --colorBackgroundBlue: hsla(287,74%,66%,1);
+
+    --gradientBack: 	hsla(129, 36.8% 62.07%);
 
     * {
         color: rgb(59, 58, 58);
@@ -14,17 +16,19 @@
 }
 
 :root[data-color-scheme="dark"] {
-    --colorPearlPink: rgb(213, 117, 141);  
-    --colorPearlBlue: rgba(72, 125, 147, 1);      
-    --colorLavenderSheen: rgba(115, 100, 143, 1);  
-    --colorSoftMint: rgba(85, 148, 138, 1);        
-    --colorHighlightWhite: rgb(133, 164, 175);
-    --colorAccesibilityBlock: rgba(150, 150, 170, 1);
-    --colorGlowShadow: rgba(92, 78, 108, 0.6);
+    --colorPearlPink: hsla(305,52%,49%,1);  
+    --colorPearlBlue: hsla(310,49%,33%,1);      
+    --colorLavenderSheen: hsla(174,40%,45%,1);  
+    --colorSoftMint: hsla(229,70%,27%,1);        
+    --colorHighlightWhite: hsla(229,53%,35%,1);
+    --colorAccesibilityBlock: hsla(285,48%,50%,1);
+    --colorGlowShadow: hsla(205,52%,59%,1);
     --backgroundDark: #1a1a1d;
     --surfaceDark: #2a2a2e;
-    --colorBackgroundBlue: rgb(53, 65, 126);
-  
+    --colorBackgroundBlue: hsla(229,44%,51%,1);
+
+    --gradientBack: hsla(264,40%,17%,1);
+
   * {
     color: white;
   }
@@ -85,8 +89,6 @@ footer {
     background-color: var(--colorHighlightWhite);
 }
 
-
-
 /* BASE ITEMS */
 a {
     color: inherit;
@@ -139,7 +141,7 @@ button {
     padding: 0.5em 1em;
     margin-bottom: 0.5em;
 
-    background-color: white;
+    background-color: var(--colorHighlightWhite);
     border-radius: 1em;
 }
 

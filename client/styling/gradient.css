@@ -33,7 +33,7 @@
   min-height: 100%;
   z-index: -1;
 
-  background: url(grain_backgroundTexture.png);
+  background: url(images/grain_texture.png);
 
   /* filter: contrast(250%) brightness(250%); */
   opacity: .2;
