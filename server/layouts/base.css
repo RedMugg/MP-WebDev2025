@@ -1,8 +1,8 @@
 /* CSS VOOR DE HEADER */
 
 header {
-
-  z-index: 10;
+    transition: .4s, background-position 0s;
+    overflow: hidden;
 }
 
 #headerNavigationDetail {

@@ -2,6 +2,12 @@
 
 {% block content %}
 
+  <link
+    href="../../client/styling/print_sheet.css"
+    media="print"
+    rel="stylesheet" />
+
+
   <main class="detailPage">
 
     <div id="gradient" class="gradient-bg"></div>
@@ -20,7 +26,10 @@
         </div>
 
 
-        <img src="/client/public/images/enkele_bloem.png" alt="hoofdKunstwerk" class="hoofdKunstwerk">
+        <img
+          src="/client/public/images/enkele_bloem.png"
+          alt="hoofdKunstwerk"
+          class="hoofdKunstwerk">
       </section>
 
       <section class="kunstwerkSectie">
@@ -62,9 +71,12 @@
           </ul>
 
 
-
       </section>
+
+    <button onclick="window.print()">Print deze pagina</button>
+
   </main>
 
   <script src="/server/scripts/getartDetail.js"></script>
 {% endblock %}
+

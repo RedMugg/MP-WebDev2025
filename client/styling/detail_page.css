@@ -1,3 +1,7 @@
+@media screen {
+  
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -193,4 +197,6 @@
   .detailPage p {
   font-size: 16px;
   }
+}
+
 }
