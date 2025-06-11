@@ -1,0 +1,43 @@
+.aboutUs h1 {
+   font-size: 60px;
+   letter-spacing: 0.5;
+
+}
+
+.aboutUs article h2 {
+  font-weight: 100;
+font-size: 30px;
+margin: 5rem 0 2rem 0;
+}
+
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw
+
+
+     
+  
+}
+
+.aboutUs article {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+       backdrop-filter: blur(20px);
+       max-width: 1200px;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 20%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+
+
+}

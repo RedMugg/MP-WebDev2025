@@ -55,7 +55,7 @@ div > h2{
 
 body {
     width: 100%;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: .25fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -79,7 +79,7 @@ header {
     justify-self: stretch;
     height: 100vh;
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
