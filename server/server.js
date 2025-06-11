@@ -47,8 +47,16 @@ app.engine('liquid', engine.renderFile)
     const html = await renderTemplate('detail_pagina');
     res.send(html);
   })
+
+    //about pagina
+  .get('/about_us', async (req, res) => {
+    const html = await renderTemplate('about_us');
+    res.send(html);
+  })
+  
   
 
   .listen(3000, () => {
     console.log('Server draait op http://localhost:3000');
   });
+

@@ -5,69 +5,142 @@
   <link href="../../client/styling/print_sheet.css" media="print" rel="stylesheet"/>
 
 
-  <main class="detailPage">
+<main class="detailPage">
 
-    <div id="gradient" class="gradient-bg"></div>
-    <div id="backgroundTexture"></div>
+  <div id="gradient" class="gradient-bg"></div>
+  <div id="backgroundTexture"></div>
 
-    <section class="oefeningSectie">
-      <a href="">Bekijk oefening</a>
-      <a href="">Sla op</a>
       <a onclick="window.print()">Print deze pagina</a>
 
-    </section>
+  </section> {% endcomment %}
+
+  <div class="content">
 
     <section class="topSectie">
+      <img src="/client/public/images/meisspelling1.jpg" alt="hoofdKunstwerk" class="hoofdKunstwerk">
       <div class="beschrijving">
-        <h1 class="naamKunst">Once upon a garden</h1>
-        <h2 class="naamKunstenaar">Linda Dounia</h2>
+        <h2 class="naamKunstenaar">Ren Loren Britton</h2>
+        <h1 class="naamKunst">Mining Meisspelling</h1>
+        <button class="open-btn" onclick="openPopup()">Bekijk oefening</button>
       </div>
-
-      <img src="/client/public/images/enkele_bloem.png" alt="hoofdKunstwerk" class="hoofdKunstwerk">
     </section>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">✖</button>
+        <article>
+
+          <h2>Assignment Name: <em>Continueally – Mining Meisspelling</em></h2>
+          <p><strong>By:</strong> Ren Loren Britton</p>
+
+
+          <section>
+            <h2>Short Description</h2>
+            <p>
+              With the further development of AI tools standardized language has become so ubiquitous that misspellings
+              are rendered impossible. Teach your computer how to misspell on purpose as a small act of refusal and as
+              an opening into the constrictive logics of producing everything as ‘correct’. Be uncorrect, meisspell.
+            </p>
+          </section>
+
+          <section>
+            <h2>Description of Work</h2>
+            <p>
+              Following in the long line of standardization linked in colonial timeline and subsequent production of a
+              white supremacist world view, the standardization of the normative spelling of English is encoded into
+              whichever dictionary i.e.: data set is set as ‘default’ on our/my/your computers.
+            </p>
+            <p>
+              The standardization of the English language and the foreclosure of other ways of speaking and expressing
+              becomes rendered as a ‘non-issue’ as Spell Check removes and ‘corrects’ variation from spellings across
+              interfaces.
+            </p>
+            <p>
+              <em>Mining Meisspelling</em> is an artwork that flips this paradigm by centering a dyslexic norm of
+              spelling – which is to say a non-standard English – by working to depathologize difference from ableist
+              white supremacy.
+            </p>
+            <p>
+              It celebrates neurodiversity and moves with invented, vernacular and community-specific modes of
+              articulation, computational spelling and speaking. When centering a dyslexic way of writing on the
+              computer, misspelled words challenge colonial dominances and become a way to seek out magic and invention
+              in everyday “mistakes”.
+            </p>
+            <p>
+              In Ren Loren Britton’s work, a simple and colloquial AI tool: spell check, becomes engaged as a program
+              that serves to break routine colonial correction and open up practices of possibility-making and
+              disability justice-informed refusal.
+            </p>
+          </section>
+
+          <section>
+            <h2>Quote</h2>
+            <blockquote>
+              “In a sense, to ‘correct’ misspellings is to ‘straighten’ the queer.”<br>
+              — Allison Parrish, <cite><a href="https://posts.decontextualize.com/queer-in-ai-2021/"
+                  target="_blank">Desire (under)lines: Notes toward a queer phenomenology of spell check</a></cite>
+              (2021-08-14)
+            </blockquote>
+          </section>
+
+          <section>
+            <h2>Exercise</h2>
+            <ol>
+              <li>Start writing on your computer in a stream of consciousness mode. Write until you misspell a word.
+                Write in English — a colonial language whose dominance must be unmade. Reflect on your relationship with
+                the language.</li>
+              <li>When you misspell a word, notice the red squiggly underline. Trace its shape with your finger, then
+                stop.</li>
+              <li>Observe your word. Say it aloud. Read into it — what was it trying to say? Write a new definition and
+                save it as a .pdf.</li>
+              <li>Right-click the word. Note suggested corrections. Click “add to dictionary” or “learn spelling”.</li>
+              <li>Let some time pass. Forget which word you added.</li>
+              <li>Next time it appears, recognize it or not. If you do, revisit your .pdf and weave the word into your
+                current writing. Add more such words to a collective data set.</li>
+            </ol>
+          </section>
+        </article>
+      </div>
+    </div>
 
     <section class="kunstwerkSectie">
       <div class="textContainer">
-        <h2>
-          Once upon a garden</h2>
+        <h2> Mining Meisspelling</h2>
+        <div class="threeImageContainer">
+          <img src="/client/public/images/meisspelling2.jpg" alt="kunstwerk-3">
+          <img src="/client/public/images/meisspelling3.jpg" alt="kunstwerk-3">
+          <img src="/client/public/images/meisspelling4.jpg" alt="kunstwerk-4">
+        </div>
         <p>
-          Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig tot geen gegevens hebben en die we ons dus ook niet kunnen herinneren.
-                                In dit project gebruikt Linda Dounia AI als een tijdmachine om visuele gegevens samen te stellen over bloemen die we niet hebben vastgelegd op basis van schaarse en gefragmenteerde beschikbare gegevens.
-                                Once Upon A Garden: The Complete Archive presenteert 50 opkomende soorten speculatieve flora in 5 hoofdstukken.
-                                De hoofdstukken komen overeen met de chronologische voortgang van het project en weerspiegelen de verbeteringen van de AI-modellen in het synthetiseren van beelden op basis van context.
+          Mining Meisspelling is a commissioned work for the exhibition ‘Poetics of Prompting’. Dyslexia is a magical
+          way of handling words and expressing things: it rearranges the world of letters. Dyslexia is not always
+          immediately apparent—until it emerges—a neabry way of spelling. With mining meisspelling this work looks at
+          the histroy of how English is standardised and the imperialsisms that determine normative ways of spelking,
+          spelling, and articuilating. It puts the experience of dyslexia at the centre and takes veissitors through the
+          (resistance to) correction and the questioning of what is or is not comprehensible. By looking at our shared
+          experiences with spellcheck tools, the work traces the histories of an algorithm that would be better used if
+          it was looking for magic.
         </p>
-        <a href="">Bezoek website</a>
       </div>
-      <div class="imageContainerMainArt">
-        <img src="/client/public/images/veel_bloemen.png" alt="hoofdKunstwerk">
+
+      <div class="textContainer">
+        <h2>
+          Ren Loren Britton</h2>
+        <p>
+          Mining Meisspelling is a commissioned work for the exhibition ‘Poetics of Prompting’. Dyslexia is a magical
+          way of handling words and expressing things: it rearranges the world of letters. Dyslexia is not always
+          immediately apparent—until it emerges—a neabry way of spelling. With mining meisspelling this work looks at
+          the histroy of how English is standardised and the imperialsisms that determine normative ways of spelking,
+          spelling, and articuilating. It puts the experience of dyslexia at the centre and takes veissitors through the
+          (resistance to) correction and the questioning of what is or is not comprehensible. By looking at our shared
+          experiences with spellcheck tools, the work traces the histories of an algorithm that would be better used if
+          it was looking for magic.
+        </p>
+        <a href="">Visit Website</a>
       </div>
     </section>
 
-    <section class="textContainer tweedeContainer">
-      <h2>
-        Oefening</h2>
-      <ul class="detailKunstOefening">
-        <li>
-          - Denk voor deze oefening na over een archief dat grote hoeveelheden informatie mist, of een archief dat niet volledig ontwikkeld of gedocumenteerd is.
-        </li>
-
-        <li>
-          - Maak een selectie van echte visuele archiefstukken uit dit archief.
-        </li>
-
-        <li>
-          - Maak de verbeelde archiefstukken met een beeldgeneratietool zoals DALL*E
-        </li>
-
-        <li>
-          - Train een GAN op de verzameling echte en verbeelde archiefstukken om beelden te kunnen genereren om het speculatieve archief op te bouwen.
-        </li>
-      </ul>
-
-
-    </section>
-
-  </main>
-
-  <script src="/server/scripts/getartDetail.js"></script>
+  </div>
+</main>
+<script src="server/scripts/detailPage.js"></script>
 {% endblock %}
