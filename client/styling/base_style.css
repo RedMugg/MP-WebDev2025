@@ -1,15 +1,14 @@
-
 :root {
-    --colorPearlPink: hsla(346,89%,77%,1);
-    --colorPearlBlue: hsla(327,97%,70%,1);
-    --colorLavenderSheen: hsla(217,85%,76%,1);
-    --colorSoftMint: hsla(201,87%,65%,1);
-    --colorHighlightWhite: hsla(30,81%,67%,1);
+    --colorPearlPink: hsla(346, 89%, 77%, 1);
+    --colorPearlBlue: hsla(327, 97%, 70%, 1);
+    --colorLavenderSheen: hsla(217, 85%, 76%, 1);
+    --colorSoftMint: hsla(201, 87%, 65%, 1);
+    --colorHighlightWhite: hsla(30, 81%, 67%, 1);
     --colorAccesibilityBlock: hsl(205.8deg 100% 83.25%);
-    --colorGlowShadow: hsla(169,91%,65%,1);
-    --colorBackgroundBlue: hsla(287,74%,66%,1);
+    --colorGlowShadow: hsla(169, 91%, 65%, 1);
+    --colorBackgroundBlue: hsla(287, 74%, 66%, 1);
 
-    --gradientBack: 	hsla(129, 36.8% 62.07%);
+    --gradientBack: hsla(129, 36.8% 62.07%);
 
     --colorLink: hsl(240, 100%, 50%);
 
@@ -19,24 +18,25 @@
 }
 
 :root[data-color-scheme="dark"] {
-    --colorPearlPink: hsla(305,52%,49%,1);  
-    --colorPearlBlue: hsla(310,49%,33%,1);      
-    --colorLavenderSheen: hsla(174,40%,45%,1);  
-    --colorSoftMint: hsla(229,70%,27%,1);        
-    --colorHighlightWhite: hsla(229,53%,35%,1);
-    --colorAccesibilityBlock: hsla(285,48%,50%,1);
-    --colorGlowShadow: hsla(205,52%,59%,1);
+    --colorPearlPink: hsla(305, 52%, 49%, 1);
+    --colorPearlBlue: hsla(310, 49%, 33%, 1);
+    --colorLavenderSheen: hsla(174, 40%, 45%, 1);
+    --colorSoftMint: hsla(229, 70%, 27%, 1);
+    --colorHighlightWhite: hsla(229, 53%, 35%, 1);
+    --colorAccesibilityBlock: hsla(285, 48%, 50%, 1);
+    --colorGlowShadow: hsla(205, 52%, 59%, 1);
     --backgroundDark: #1a1a1d;
     --surfaceDark: #2a2a2e;
-    --colorBackgroundBlue: hsla(229,44%,51%,1);
+    --colorBackgroundBlue: hsla(229, 44%, 51%, 1);
 
-    --gradientBack: hsla(264,40%,17%,1);
+    --gradientBack: hsla(264, 40%, 17%, 1);
 
     -colorLink: hsl(184, 100%, 50%);
 
   * {
     color: white;
   }
+
 }
 
 * {
@@ -52,6 +52,16 @@ section>h1 {
     letter-spacing: -1.5vw;
 }
 
+section>p {
+    background-color: transparent;
+    color: black;
+
+}
+
+div>h2 {
+    font-weight: 700;
+}
+
 body {
     /* display: flex; */
     display: grid;
@@ -64,14 +74,13 @@ body {
     margin: 0;
     padding: 0;
 
-    background: radial-gradient( ellipse at center,
-    var(--colorPearlPink) 0%,
-    var(--colorPearlBlue) 25%,
-    var(--colorLavenderSheen) 50%,
-    var(--colorSoftMint) 75%,
-    var(--colorHighlightWhite) 90%,
-    var(--colorGlowShadow) 100%
-);
+    background: radial-gradient(ellipse at center,
+            var(--colorPearlPink) 0%,
+            var(--colorPearlBlue) 25%,
+            var(--colorLavenderSheen) 50%,
+            var(--colorSoftMint) 75%,
+            var(--colorHighlightWhite) 90%,
+            var(--colorGlowShadow) 100%);
 }
 
 footer {
@@ -89,6 +98,7 @@ footer {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -109,8 +119,6 @@ section>p {
 div > h2{
     font-weight: 700;
 }
-
-
 
 
 /* LABEL */
@@ -139,7 +147,7 @@ input:checked {
 
 button {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
 
     width: 8em;
@@ -160,9 +168,51 @@ button {
 
 /* RADIO STYLING */
 
-input[type="radio"] {
+.viewRadios {
+    appearance: none;
+    margin: 0;
+    border: 0;
+}
+
+.viewRadios+label {
+    width: 10%;
+    display: inline-block;
+    background-color: var(--colorHighlightWhite);
+    text-align: center;
+    font-weight: 100;
+
+    margin-block: auto;
+    padding-block: 10px;
+    transition: .1s;
+
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+
+}
+
+.viewRadios+label:first-of-type {
+border-radius: 10px 0 0 10px;
+}
+
+.viewRadios+label:last-of-type {
+border-radius: 0 10px 10px 0;
+}
+
+.viewRadios+label:hover {
+    background-color: var(--colorSoftMint);
+}
+
+.viewRadios:checked+label {
+    background-color: var(--colorSoftMint);
+    color: white;
+    font-weight: 700;
+}
+
+.headerAccessibilityMenu input[type="radio"] {
+    appearance: auto;
     border-radius: 50%;
-    width: 1em;                         
+    width: 1em;
 
     padding: .5em;
     margin-left: .2ems;
@@ -175,8 +225,8 @@ input[type="radio"] {
 
 input[type="checkbox"] {
     border-radius: 50%;
-    width: 1em;   
-    height: 1em;                      
+    width: 1em;
+    height: 1em;
 
     margin: 0;
     margin-left: .3em;
@@ -213,21 +263,19 @@ option {
 
 .sortDropdown,
 ::picker(select) {
-  appearance: base-select;
+    appearance: base-select;
 }
 
 .sortDropdown::picker-icon {
-  color: #999;
-  transition: 0.4s rotate;
+    color: #999;
+    transition: 0.4s rotate;
 }
 
 .sortDropdown:open::picker-icon {
-  rotate: 180deg;
+    rotate: 180deg;
 }
 
 
 
 
 /* MOBILE VIEW */
-
-

@@ -69,10 +69,28 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
   //   });
 
 
+// List View
+const viewRadios = document.querySelectorAll('input[name="viewRadios"]');
 
+function applyView(view) {
+  if (view === 'list') {
+    root.setAttribute('data-view', 'list');
+  } else if (view === 'thumbnail') {
+    root.removeAttribute('data-view', 'thumbnail');
+  }
+}
+
+// Haalt de kleurmode op uit de local storage en selecteert de juiste radio button en past de colorscheme toe
+// als deze aangepast wordt.
+viewRadios.forEach(radio => {
+  radio.addEventListener('change', e => {
+    const view = e.target.value;
+    localStorage.setItem('viewMode', view);
+    applyView(view);
+  });
+});
 
 // LOCAL STORAGE 
-
 document.querySelector('form').addEventListener('click', function() {
     // Pak van dit formulier (this) de formulierdata (met new FormData)
     let formData = new FormData(this)
