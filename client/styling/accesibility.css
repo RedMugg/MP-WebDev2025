@@ -7,8 +7,8 @@
   flex-direction: column;
   align-items: flex-end;
 
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 2em;
   right: 0;
 
   background-color: var(--colorHighlightWhite);
