@@ -2,10 +2,7 @@
 
 {% block content %}
 
-  <link
-    href="../../client/styling/print_sheet.css"
-    media="print"
-    rel="stylesheet" />
+  <link href="../../client/styling/print_sheet.css" media="print" rel="stylesheet"/>
 
 
   <main class="detailPage">
@@ -16,67 +13,61 @@
     <section class="oefeningSectie">
       <a href="">Bekijk oefening</a>
       <a href="">Sla op</a>
+      <a onclick="window.print()">Print deze pagina</a>
 
     </section>
 
-      <section class="topSectie">
-        <div class="beschrijving">
-          <h1 class="naamKunst">Once upon a garden</h1>
-          <h2 class="naamKunstenaar">Linda Dounia</h2>
-        </div>
+    <section class="topSectie">
+      <div class="beschrijving">
+        <h1 class="naamKunst">Once upon a garden</h1>
+        <h2 class="naamKunstenaar">Linda Dounia</h2>
+      </div>
 
+      <img src="/client/public/images/enkele_bloem.png" alt="hoofdKunstwerk" class="hoofdKunstwerk">
+    </section>
 
-        <img
-          src="/client/public/images/enkele_bloem.png"
-          alt="hoofdKunstwerk"
-          class="hoofdKunstwerk">
-      </section>
-
-      <section class="kunstwerkSectie">
-        <div class="textContainer">
-          <h2>
-            Once upon a garden</h2>
-          <p>
-            Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig tot geen gegevens hebben en die we ons dus ook niet kunnen herinneren.
-            In dit project gebruikt Linda Dounia AI als een tijdmachine om visuele gegevens samen te stellen over bloemen die we niet hebben vastgelegd op basis van schaarse en gefragmenteerde beschikbare gegevens.
-            Once Upon A Garden: The Complete Archive presenteert 50 opkomende soorten speculatieve flora in 5 hoofdstukken.
-            De hoofdstukken komen overeen met de chronologische voortgang van het project en weerspiegelen de verbeteringen van de AI-modellen in het synthetiseren van beelden op basis van context. 
-          </p>
-          <a href="">Bezoek website</a>
-        </div>
-        <div class="imageContainerMainArt">
-          <img src="/client/public/images/veel_bloemen.png" alt="hoofdKunstwerk">
-        </div>
-      </section>
-
-      <section class="textContainer tweedeContainer">
+    <section class="kunstwerkSectie">
+      <div class="textContainer">
         <h2>
-          Oefening</h2>
-        <ul class="detailKunstOefening">
-            <li>
-             - Denk voor deze oefening na over een archief dat grote hoeveelheden informatie mist, of een archief dat niet volledig ontwikkeld of gedocumenteerd is.
-            </li>
+          Once upon a garden</h2>
+        <p>
+          Dit werk is een speculatief archief van ernstig bedreigde en uitgestorven flora waarvan we weinig tot geen gegevens hebben en die we ons dus ook niet kunnen herinneren.
+                                In dit project gebruikt Linda Dounia AI als een tijdmachine om visuele gegevens samen te stellen over bloemen die we niet hebben vastgelegd op basis van schaarse en gefragmenteerde beschikbare gegevens.
+                                Once Upon A Garden: The Complete Archive presenteert 50 opkomende soorten speculatieve flora in 5 hoofdstukken.
+                                De hoofdstukken komen overeen met de chronologische voortgang van het project en weerspiegelen de verbeteringen van de AI-modellen in het synthetiseren van beelden op basis van context.
+        </p>
+        <a href="">Bezoek website</a>
+      </div>
+      <div class="imageContainerMainArt">
+        <img src="/client/public/images/veel_bloemen.png" alt="hoofdKunstwerk">
+      </div>
+    </section>
 
-            <li>
-             - Maak een selectie van echte visuele archiefstukken uit dit archief.
-            </li>
+    <section class="textContainer tweedeContainer">
+      <h2>
+        Oefening</h2>
+      <ul class="detailKunstOefening">
+        <li>
+          - Denk voor deze oefening na over een archief dat grote hoeveelheden informatie mist, of een archief dat niet volledig ontwikkeld of gedocumenteerd is.
+        </li>
 
-            <li>
-             - Maak de verbeelde archiefstukken met een beeldgeneratietool zoals DALL*E
-            </li>
+        <li>
+          - Maak een selectie van echte visuele archiefstukken uit dit archief.
+        </li>
 
-            <li>
-             - Train een GAN op de verzameling echte en verbeelde archiefstukken om beelden te kunnen genereren om het speculatieve archief op te bouwen.
-            </li>
-          </ul>
+        <li>
+          - Maak de verbeelde archiefstukken met een beeldgeneratietool zoals DALL*E
+        </li>
+
+        <li>
+          - Train een GAN op de verzameling echte en verbeelde archiefstukken om beelden te kunnen genereren om het speculatieve archief op te bouwen.
+        </li>
+      </ul>
 
 
-      </section>
-
-    <button onclick="window.print()">Print deze pagina</button>
+    </section>
 
   </main>
 
   <script src="/server/scripts/getartDetail.js"></script>
 {% endblock %}
-
