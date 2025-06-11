@@ -17,28 +17,17 @@
 
   <body>
     <header>
-      <ul class="hoverEffect">
-        <li>
-          <a href="/">
-            Home
-          </a>
-        </li>
+      <details id="headerNavigationDetail">
+        <summary class="headerNavBarIcon">☰</summary>
+          <nav class="headerNavBar">
+            <a href="/">Home</a>
+            <a href="/overview">Collection</a>
+            <a href="">Contact</a>
+          </nav>
+      </details>
 
-        <li>
-          <a href="/overview">
-            Collection
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            Contact
-          </a>
-        </li>
-      </ul>
-
-      <details>
-        <summary>Voor&shykeuren</summary>
+      <details class="headerAccessibilityMenu">
+        <summary class="headerAccesibilityMenuTitle">Voor&shykeuren</summary>
         <div id="accessibilityBlock">
           <form>
             <fieldset class="animations">
@@ -86,9 +75,6 @@
 
     {% block content %}{% endblock %}
 
-    <footer>
-
-    </footer>
   </body>
 </html>
 

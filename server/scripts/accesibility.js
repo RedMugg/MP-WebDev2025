@@ -2,14 +2,14 @@ const allElements = document.querySelectorAll('body *');
 
 
 
-// Animaties uitzetten
+// ANIMATIE TOGGLE
 
 
 
 
 
 
-// Light and Darkmode
+// LIGHT AND DARK MODE
 
 // Zet het html element als root en zet de radios met name colorMode in als colorRadios
 const root = document.documentElement;
@@ -44,7 +44,7 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
 
 
-// Lettergrote slider
+// LETTERGROOTTE SLIDER
 
   const slider = document.getElementById('fontSlider');
   const label = document.getElementById('fontSizeLabel');
@@ -71,7 +71,7 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
 
 
-// Local Storage 
+// LOCAL STORAGE 
 
 document.querySelector('form').addEventListener('click', function() {
     // Pak van dit formulier (this) de formulierdata (met new FormData)
@@ -118,3 +118,5 @@ document.querySelector('form').addEventListener('click', function() {
 if (storedColorMode) {
   applyTheme(storedColorMode);
 }
+
+// OPSLAAN IN FAVORIETEN
