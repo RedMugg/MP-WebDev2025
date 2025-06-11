@@ -46,27 +46,27 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
 // LETTERGROOTTE SLIDER
 
-  const slider = document.getElementById('fontSlider');
-  const label = document.getElementById('fontSizeLabel');
+  // const slider = document.getElementById('fontSlider');
+  // const label = document.getElementById('fontSizeLabel');
 
-    // Haalt de standaard lettergrootte op vanuit de styling op het document. 
-    allElements.forEach(el => {
-      const style = window.getComputedStyle(el);
-      const originalSize = parseFloat(style.fontSize);
-      el.setAttribute('data-base-font-size', originalSize);
-    });
+  //   // Haalt de standaard lettergrootte op vanuit de styling op het document. 
+  //   allElements.forEach(el => {
+  //     const style = window.getComputedStyle(el);
+  //     const originalSize = parseFloat(style.fontSize);
+  //     el.setAttribute('data-base-font-size', originalSize);
+  //   });
 
-    // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
-    slider.addEventListener('input', () => {
-    const newValue = parseInt(slider.value);
-      label.textContent = newValue;
+  //   // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
+  //   slider.addEventListener('input', () => {
+  //   const newValue = parseInt(slider.value);
+  //     label.textContent = newValue;
 
-    // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
-    allElements.forEach(el => {
-    const original = parseFloat(el.getAttribute('data-base-font-size'));
-        el.style.fontSize = (original + newValue) + 'px';
-      });
-    });
+  //   // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
+  //   allElements.forEach(el => {
+  //   const original = parseFloat(el.getAttribute('data-base-font-size'));
+  //       el.style.fontSize = (original + newValue) + 'px';
+  //     });
+  //   });
 
 
 // List View
@@ -115,10 +115,10 @@ document.querySelector('form').addEventListener('click', function() {
       if (inputField) {
         // Voegt de waarde van de slider uit de local storage toe aan de label en zet de slider op de juiste waarde.
         // Ook wordt de de fontsize op de pagina aangepast aan wat er uit de local storage gehaald wordt.
-        if (inputField.type === "range") {
-              inputField.value = storedData[key];
-              slider.dispatchEvent(new Event('input'));
-              }
+        // if (inputField.type === "range") {
+        //       inputField.value = storedData[key];
+        //       slider.dispatchEvent(new Event('input'));
+        //       }
 
         // Vult de value van de radio button in met de waarde die in de local storage staat.
          if (inputField.type === "radio") {

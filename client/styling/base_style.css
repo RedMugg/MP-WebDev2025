@@ -10,6 +10,8 @@
 
     --gradientBack: hsla(129, 36.8% 62.07%);
 
+    --colorLink: hsl(240, 100%, 50%);
+
     * {
         color: rgb(59, 58, 58);
     }
@@ -29,9 +31,12 @@
 
     --gradientBack: hsla(264, 40%, 17%, 1);
 
-    * {
-        color: white;
-    }
+    -colorLink: hsl(184, 100%, 50%);
+
+  * {
+    color: white;
+  }
+
 }
 
 * {
@@ -58,9 +63,13 @@ div>h2 {
 }
 
 body {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 95vw;
 
     width: 100%;
+    height: auto;
+    overflow: auto;
 
     margin: 0;
     padding: 0;
@@ -74,16 +83,13 @@ body {
             var(--colorGlowShadow) 100%);
 }
 
-main {
-    grid-column: 2/2;
-    height: 100vh;
-    overflow: auto;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 4em;
+    padding-top: 3em;
 
     background-color: var(--colorHighlightWhite);
 }
@@ -102,6 +108,16 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+section>p {
+    background-color: transparent;
+    color: black;
+
+}
+
+div > h2{
+    font-weight: 700;
 }
 
 
