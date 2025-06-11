@@ -6,6 +6,9 @@
       <title>{{ title }}
       </title>
     {% endblock %}
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/index.css">
     <script src="/dist/index.js" defer></script>
     {% block styles %}{% endblock %}
@@ -14,29 +17,18 @@
 
   <body>
     <header>
-      <ul class="hoverEffect">
-        <li>
-          <a href="/">
-            Home
-          </a>
-        </li>
+      <details id="headerNavigationDetail">
+        <summary class="headerNavBarIcon">☰</summary>
+          <nav class="headerNavBar">
+            <a href="/">Home</a>
+            <a href="/overview">Collection</a>
+            <a href="">Contact</a>
+          </nav>
+      </details>
 
-        <li>
-          <a href="/overview">
-            Collection
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            Contact
-          </a>
-        </li>
-      </ul>
-
-      <details>
-        <summary>Voor&shykeuren</summary>
-        <div id="voorkeurBlock">
+      <details class="headerAccessibilityMenu">
+        <summary class="headerAccesibilityMenuTitle">Voor&shykeuren</summary>
+        <div id="accessibilityBlock">
           <form>
             <fieldset class="animations">
               <legend>Animaties</legend>
@@ -82,6 +74,7 @@
     </header>
 
     {% block content %}{% endblock %}
+
   </body>
 </html>
 

@@ -4,8 +4,9 @@
 
     <main>
     <div id="gradient" class="gradient-bg"></div>
-    <div id="texture"></div>
+    <div id="backgroundTexture"></div>
 
+    <section class="overviewFilterSelects">
         <select id="sortDropdown" class="sortDropdown">
             <option value="artist-asc">Artiest A-Z</option>
             <option value="artist-desc">Artiest Z-A</option>
@@ -19,9 +20,7 @@
             <option value="sound">Geluid</option>
             <option value="text">Text</option>
           </select>
-          
-        </select>
-
+    </section>
 
         <section>
             <ul class="artList">
@@ -36,5 +35,5 @@
     </footer>
 </body>
 
-        <script src="/server/scripts/getArt.js"></script>
+        <script src="/server/scripts/getAllArt.js"></script>
 {% endblock %}
