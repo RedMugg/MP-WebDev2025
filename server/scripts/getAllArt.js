@@ -90,9 +90,11 @@ function updateDisplay() {
             <li class="artistCard">
                 <a href="/detail_pagina/` + artID + `">
                 <img src="` + artImg + `" alt="` + artAlt + `">
+                <div>
                     <h2>${artName}</h2>
                     <h3>${artistName}</h3>
                     <p>${artType}</p>
+                    </div>
                 </a>
             </li>
         `);
