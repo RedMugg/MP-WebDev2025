@@ -17,15 +17,8 @@ function animate() {
   currentX += (targetX - currentX) * delayFactor;
   currentY += (targetY - currentY) * delayFactor;
 
-  // Gradient updaten met vertraagde (current) waarden
-  gradient.style.backgroundImage = 
-    `radial-gradient(at ${currentX / 2}% ${currentY + 30 / 3 * 2}%, rgb(23, 23, 23) 0px, transparent 50%), 
-     radial-gradient(at ${currentX / 3}% ${currentY}%, rgb(31, 221, 255) 0px, transparent 50%), 
-     radial-gradient(at ${currentX}% ${currentY / 3}%, rgb(16, 194, 234) 0px, transparent 50%), 
-     radial-gradient(at ${currentX * 2}% ${currentY + 20}%, rgb(255, 133, 224) 0px, transparent 50%), 
-     radial-gradient(at ${currentX * 2 / 3}% ${currentY + 20}%, rgb(222, 94, 94) 0px, transparent 50%), 
-     radial-gradient(at ${currentX * 3 / 2}% ${currentY / 3}%, rgb(17, 17, 44) 0px, transparent 50%), 
-     radial-gradient(at 0% 0%, rgb(169, 67, 173) 0px, transparent 50%)`;
+ gradient.style.setProperty('--currentX', currentX / 100);
+ gradient.style.setProperty('--currentY', currentY / 100);
 
   requestAnimationFrame(animate);
 }
