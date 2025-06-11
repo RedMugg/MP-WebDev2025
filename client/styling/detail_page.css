@@ -144,7 +144,7 @@ height: fit-content;
   width: 80%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   gap: 3em;
   border-radius: 15px;
@@ -153,7 +153,6 @@ height: fit-content;
  
 .threeImageContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -163,6 +162,45 @@ height: fit-content;
   width: 30%;
   height: 300px;
   object-fit: cover;
+}
+
+    @media (max-width: 600px) {
+    .textContainer {
+      justify-content: start;
+    }
+  .threeImageContainer {
+  flex-direction: column;
+}
+
+  .topSectie {
+    align-items: center;
+   flex-direction: column;
+   justify-content: center;
+  }
+
+  .hoofdKunstwerk {
+    width: 100%;
+    opacity: 50%;
+  }
+
+  .beschrijving {
+    position: absolute;
+  }
+
+
+  
+
+.threeImageContainer img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+
+
+
 }
 
 .tweedeContainer {
@@ -175,6 +213,7 @@ height: fit-content;
   /* background-color: var(--colorTurquoiseWave); */
   max-width: 1000px;
   line-height: 30px;
+  text-align: left;
 }
  
 .detailPage a {
@@ -188,6 +227,7 @@ height: fit-content;
 .textContainer h2 {
   font-size: 2.5rem;
   color: #0c0c0c;
+  text-align: left;
 }
  
  
@@ -297,3 +337,4 @@ height: fit-content;
         padding: 15px;
       }
     }
+
