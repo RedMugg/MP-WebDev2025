@@ -8,7 +8,7 @@
     --colorGlowShadow: hsla(169,91%,65%,1);
     --colorBackgroundBlue: hsla(287,74%,66%,1);
 
-    --gradientBack: 	hsla(129, 36.8% 62.07%);
+    --gradientBack: 	hsla(287,74%,66%,1);
 
     * {
         color: rgb(59, 58, 58);
@@ -27,7 +27,7 @@
     --surfaceDark: #2a2a2e;
     --colorBackgroundBlue: hsla(229,44%,51%,1);
 
-    --gradientBack: hsla(264,40%,17%,1);
+    --gradientBack: hsla(229,43%,29%,1);
   
   * {
     color: white;
