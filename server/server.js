@@ -42,13 +42,11 @@ app.engine('liquid', engine.renderFile)
   })
   
   //detail pagina
-  .get('/detail_pagina', async (req, res) => {
+  .get('/detail_pagina/:id', async (req, res) => {
+    
     const html = await renderTemplate('detail_pagina');
     res.send(html);
   })
-  
-
-
   
 
   .listen(3000, () => {
