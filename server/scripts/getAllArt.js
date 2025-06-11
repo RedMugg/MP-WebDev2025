@@ -77,6 +77,7 @@ function updateDisplay() {
 
     // Vul opnieuw
     filtered.forEach(item => {
+        const artID = item.id;
         const artistName = item.artist;
         const artName = item.title || "Zonder titel";
         const artistLink = item.link || "#";
@@ -87,7 +88,7 @@ function updateDisplay() {
         // toont de data op de pagina
         artList.insertAdjacentHTML("beforeend", `
             <li class="artistCard">
-                <a href="/detail_pagina">
+                <a href="/detail_pagina/` + artID + `">
                 <img src="` + artImg + `" alt="` + artAlt + `">
                     <h2>${artName}</h2>
                     <h3>${artistName}</h3>
