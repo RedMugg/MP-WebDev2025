@@ -52,7 +52,7 @@
   min-height: 100%;
   z-index: -1;
 
-  background-color: var(--gradientBack);
+  background-color: var(--colorBackgroundBlue);
   background-image:
     radial-gradient(at calc(var(--currentX, 0.5) * 30%) calc(var(--currentY, 0.5) * 80%), var(--colorPearlPink) 0px, transparent 50%),
     radial-gradient(at calc(var(--currentX, 0.5) * 100%) calc(var(--currentY, 0.5) * 50%), var(--colorPearlBlue) 0px, transparent 50%),
@@ -78,10 +78,10 @@
   min-height: 100%;
   z-index: -1;
 
-  background: url(images/grain_texture.png);
+  background: url(grain_backgroundTexture.png);
 
   /* filter: contrast(250%) brightness(250%); */
-  opacity: .1;
+  opacity: .2;
   background-size: '';
   background-repeat: repeat;
   background-attachment: scroll;
