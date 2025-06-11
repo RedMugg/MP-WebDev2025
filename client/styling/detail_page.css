@@ -93,7 +93,7 @@ font-size: 16px;
 }
  
  
-.detailPage h1, h2, p {
+.detailPage h1, .detailPage h2, .detailPage p {
   text-align: center;
 }
  
