@@ -51,11 +51,11 @@ function updateDisplay() {
     // Als er geen filter is geselecteerd, gebruik dan de originele data
     let filtered = [];
     if (filterType === "image") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("image"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("image"));
     } else if (filterType === "sound") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("sound"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("sound"));
     } else if (filterType === "text") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("text"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("text"));
     } else {
         filtered = [...convertedList];
     }
