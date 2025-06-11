@@ -35,6 +35,11 @@ app.engine('liquid', engine.renderFile)
     res.send(html);
   })
 
+  .get('/about_us', async (req, res) => {
+    const html = await renderTemplate('about_us');
+    res.send(html);
+  })
+
   //overzicht pagina
   .get('/overview', async (req, res) => {
     const html = await renderTemplate('overview');
