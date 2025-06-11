@@ -69,3 +69,11 @@
     padding: 5px;
 }
 
+:root[data-view="list"] .artistCard h3 {
+    padding: 5px;
+}
+
+:root[data-view="list"] .artistCard p {
+    padding: 5px;
+}
+
