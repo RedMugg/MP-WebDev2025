@@ -1,4 +1,4 @@
-const hoverEffect = document.querySelectorAll(".hoverEffect");
+const hoverEffect = document.querySelectorAll(".headerCollapsNavBar");
 
 const colors = ["--colorPearlBlue", "--colorLavenderSheen", "--colorSoftMint", "--colorGlowShadow"];
 
@@ -16,3 +16,4 @@ hoverEffect.forEach(hoverEffect => {
     hoverEffect.style.setProperty('--randomColor', "var(" + randomColor + ")")
   })
 })
+

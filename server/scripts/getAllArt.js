@@ -51,11 +51,11 @@ function updateDisplay() {
     // Als er geen filter is geselecteerd, gebruik dan de originele data
     let filtered = [];
     if (filterType === "image") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("image"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("image"));
     } else if (filterType === "sound") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("sound"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("sound"));
     } else if (filterType === "text") {
-        filtered = data.filter(item => item.type?.toLowerCase().includes("text"));
+        filtered = convertedList.filter(item => item.type?.toLowerCase().includes("text"));
     } else {
         filtered = [...convertedList];
     }
@@ -77,6 +77,7 @@ function updateDisplay() {
 
     // Vul opnieuw
     filtered.forEach(item => {
+        const artID = item.id;
         const artistName = item.artist;
         const artName = item.title || "Zonder titel";
         const artistLink = item.link || "#";
@@ -87,11 +88,13 @@ function updateDisplay() {
         // toont de data op de pagina
         artList.insertAdjacentHTML("beforeend", `
             <li class="artistCard">
-                <a href="/detail_pagina">
+                <a href="/detail_pagina/` + artID + `">
                 <img src="` + artImg + `" alt="` + artAlt + `">
+                <div>
                     <h2>${artName}</h2>
                     <h3>${artistName}</h3>
                     <p>${artType}</p>
+                    </div>
                 </a>
             </li>
         `);

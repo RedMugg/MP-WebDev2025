@@ -1,0 +1,163 @@
+.homePageMain {
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+
+  height: 100%;
+}
+
+.homePageTitle {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin-bottom: 4em;
+  padding-top: 3em;
+}
+
+.homePageTitle p {
+  font-size: 2vw;
+}
+
+
+.homePageTitleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 1em;
+
+  background-color: var(--colorPearlBlue) 0.5;
+}
+
+.homePageArtShowcase {
+  grid-column: 2;
+}
+
+.homePageInfoSection {
+  grid-column: 2;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0.5em 0;
+  margin-bottom: 2em;
+}
+
+.homePageInfoSection h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.homePageInfoSection p {
+  padding: 1em;
+
+  border: 1px solid var(--colorHighlightWhite);
+  border-radius: 1em;
+}
+
+.homePageInfo h2 {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 18vw;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin: .2em;
+
+  line-height: .7;
+  letter-spacing: -1.5vw;
+}
+
+
+.homePageTitleText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1em;
+}
+
+.homePageTitleText :nth-child(1) {
+  display: flex;
+  align-self: start;
+  transform: rotate(8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.homePageTitleText :nth-child(2) {
+  margin: 0 auto;
+  transform: rotate(-8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.homePageTitleText :nth-child(3) {
+  display: flex;
+  align-self: end;
+
+  transform: rotate(8deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+  top: -1em;
+}
+
+.homePageTitleText:hover :nth-child(1) {
+  transform: scale(1.2);
+}
+
+.homePageTitleText:hover :nth-child(2) {
+  transform: scale(1.2);
+}
+
+.homePageTitleText:hover :nth-child(3) {
+  transform: scale(1.2);
+}
+
+/* SITE UITLEG */
+
+.homePageSiteUitleg {
+  grid-column: 2;
+}
+
+.homePageSiteUitlegList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.homePageSiteUitlegList li {
+  width: 325px;
+
+  padding: 1em;
+  margin-bottom: 3em;
+
+  background-color: var(--colorHighlightWhite);
+  border: 1px solid var(--colorPearlBlue);
+  border-radius: 1em;
+
+  transition: scale 0.2s ease-in-out;
+}
+
+.homePageSiteUitlegList li:hover {
+  scale: 1.15;
+}
+
+.homePageSiteUitlegList li h4 {
+  font-weight: bold;
+}
+
+.homePageSiteUitlegList li p {
+  margin: .3em 0;
+}
+
+.homePageSiteUitlegList li a {
+  color: blue !important;
+}

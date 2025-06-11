@@ -2,15 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 
 .artistCard {
     width: 400px;
 
     padding: 20px;
-
-    background-color: var(s);
 
     transition-duration: .3s;
 
@@ -45,21 +42,38 @@
     color: black;
 }
 
-/* Random art */
+:root[data-view="list"] .artistCard {
+    width: 100%;
+    padding: 2px;
 
-#thumbnail-container {
+}
+
+:root[data-view="list"] a {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1000px;
-  }
-  
-  canvas {
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    width: 240px !important;
-    height: 240px !important;
-    border: 2px solid #000;
-  }
-  
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+:root[data-view="list"] .artistCard img {
+    width: 10vw;
+    height: 100px;
+
+    border-right: 5px solid black;;
+    object-fit: cover;
+    padding: 5px;
+}
+
+:root[data-view="list"] .artistCard h2 {
+    border-top: none;
+
+    padding: 5px;
+}
+
+:root[data-view="list"] .artistCard h3 {
+    padding: 5px;
+}
+
+:root[data-view="list"] .artistCard p {
+    padding: 5px;
+}
+

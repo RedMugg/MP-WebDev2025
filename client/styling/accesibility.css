@@ -1,46 +1,84 @@
-details {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+* {
+  interpolate-size: allow-keywords;
+}
 
-    margin: 2em;
+.headerAccessibilityMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  position: fixed;
+  bottom: 2em;
+  right: 0;
+
+  background-color: var(--colorHighlightWhite);
+  border: 1px solid white;
+
+  border-radius: 1em;
+  margin: 2em;
+  margin-bottom: 2em;
+  padding: 0.5em;
+
+  z-index: 20;
+}
+
+.headerAccessibilityMenu::details-content {
+  position: absolute;
+  bottom: 100%; 
+  right: 0;
+
+  margin: 0.5em 0;
+
+  background-color: var(--colorHighlightWhite);
+  border-radius: 0.5em;
+  overflow: hidden;
+
+  width: 12rem;
+  block-size: 0;
+  content-visibility: hidden;
+
+  transition:
+    block-size 0.5s ease,
+    content-visibility 0.6s;
+  transition-behavior: allow-discrete;
+}
+
+.headerAccessibilityMenu[open]::details-content {
     padding: 1em;
-
-    background-color: var(--colorHighlightWhite);
-    border-radius: 1em;
-
-    z-index: 20;
+    block-size: auto; 
+    content-visibility: visible;
 }
 
 fieldset {
     border: 0;
-    border-bottom: 1px solid var(--colorHighlightWhite);
+    border-bottom: 1px solid black;
     margin: 0.5em 0;
     padding: 0.3em 0;
 }
 
-summary {
+.headerAccesibilityMenuTitle {
     list-style: none;
     cursor: pointer;
     display: list-item;
 
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 300;
 }
 
-summary::before {
+.headerAccesibilityMenuTitle::before {
+    display: inline-block;
+
     content: "▶";
+    margin: .2em;
+    	
+
     transition: transform 1s ease;
     transform-origin: center;
-    margin-right: 0.5em;
-    display: inline-block;
+    transform: rotate(90deg);
 }
 
-details[open] summary::before {
-    transform: rotate(180deg);
+.headerAccessibilityMenu[open] .headerAccesibilityMenuTitle::before {
+    transform: rotate(270deg);
 }
 
 legend {
@@ -50,24 +88,6 @@ legend {
     margin: 0.2em 0;
 }
 
-#accessibilityBlock {
-    display: flex;
-
-    position: absolute;
-    bottom: 3em;
-    right: 0;
-
-    width: 15rem;
-
-    background-color: var(--colorPearlBlue);
-    border: 1px solid var(--colorPearlBlue);
-    border-radius: 1em;
-
-    padding: 1rem;
-    margin: 1em 0;
-
-    z-index: 2;
-}
 
 
 

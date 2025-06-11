@@ -2,14 +2,14 @@ const allElements = document.querySelectorAll('body *');
 
 
 
-// Animaties uitzetten
+// ANIMATIE TOGGLE
 
 
 
 
 
 
-// Light and Darkmode
+// LIGHT AND DARK MODE
 
 // Zet het html element als root en zet de radios met name colorMode in als colorRadios
 const root = document.documentElement;
@@ -44,35 +44,53 @@ const colorRadios = document.querySelectorAll('input[name="colorMode"]');
 
 
 
-// Lettergrote slider
+// LETTERGROOTTE SLIDER
 
-  const slider = document.getElementById('fontSlider');
-  const label = document.getElementById('fontSizeLabel');
+  // const slider = document.getElementById('fontSlider');
+  // const label = document.getElementById('fontSizeLabel');
 
-    // Haalt de standaard lettergrootte op vanuit de styling op het document. 
-    allElements.forEach(el => {
-      const style = window.getComputedStyle(el);
-      const originalSize = parseFloat(style.fontSize);
-      el.setAttribute('data-base-font-size', originalSize);
-    });
+  //   // Haalt de standaard lettergrootte op vanuit de styling op het document. 
+  //   allElements.forEach(el => {
+  //     const style = window.getComputedStyle(el);
+  //     const originalSize = parseFloat(style.fontSize);
+  //     el.setAttribute('data-base-font-size', originalSize);
+  //   });
 
-    // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
-    slider.addEventListener('input', () => {
-    const newValue = parseInt(slider.value);
-      label.textContent = newValue;
+  //   // Zorgt dat de waarde die in de label wordt weergegeven gelijk is aan de waarde van de slider.
+  //   slider.addEventListener('input', () => {
+  //   const newValue = parseInt(slider.value);
+  //     label.textContent = newValue;
 
-    // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
-    allElements.forEach(el => {
-    const original = parseFloat(el.getAttribute('data-base-font-size'));
-        el.style.fontSize = (original + newValue) + 'px';
-      });
-    });
-
-
+  //   // Voegt de toegevoedgde waarde toe aan het orgineel en maakt de fontsize op alle elementen groter.
+  //   allElements.forEach(el => {
+  //   const original = parseFloat(el.getAttribute('data-base-font-size'));
+  //       el.style.fontSize = (original + newValue) + 'px';
+  //     });
+  //   });
 
 
-// Local Storage 
+// List View
+const viewRadios = document.querySelectorAll('input[name="viewRadios"]');
 
+function applyView(view) {
+  if (view === 'list') {
+    root.setAttribute('data-view', 'list');
+  } else if (view === 'thumbnail') {
+    root.removeAttribute('data-view', 'thumbnail');
+  }
+}
+
+// Haalt de kleurmode op uit de local storage en selecteert de juiste radio button en past de colorscheme toe
+// als deze aangepast wordt.
+viewRadios.forEach(radio => {
+  radio.addEventListener('change', e => {
+    const view = e.target.value;
+    localStorage.setItem('viewMode', view);
+    applyView(view);
+  });
+});
+
+// LOCAL STORAGE 
 document.querySelector('form').addEventListener('click', function() {
     // Pak van dit formulier (this) de formulierdata (met new FormData)
     let formData = new FormData(this)
@@ -97,10 +115,10 @@ document.querySelector('form').addEventListener('click', function() {
       if (inputField) {
         // Voegt de waarde van de slider uit de local storage toe aan de label en zet de slider op de juiste waarde.
         // Ook wordt de de fontsize op de pagina aangepast aan wat er uit de local storage gehaald wordt.
-        if (inputField.type === "range") {
-              inputField.value = storedData[key];
-              slider.dispatchEvent(new Event('input'));
-              }
+        // if (inputField.type === "range") {
+        //       inputField.value = storedData[key];
+        //       slider.dispatchEvent(new Event('input'));
+        //       }
 
         // Vult de value van de radio button in met de waarde die in de local storage staat.
          if (inputField.type === "radio") {
@@ -119,25 +137,4 @@ if (storedColorMode) {
   applyTheme(storedColorMode);
 }
 
-
-function openPopup() {
-  console.log("openPopup is aangeroepen");
-  const popup = document.getElementById("popup");
-  if (popup) {
-    console.log("popup element gevonden");
-    popup.style.display = "flex";
-  } else {
-    console.error("popup element NIET gevonden");
-  }
-}
-
-function closePopup() {
-  console.log("closePopup is aangeroepen");
-  const popup = document.getElementById("popup");
-  if (popup) {
-    console.log("popup element gevonden");
-    popup.style.display = "none";
-  } else {
-    console.error("popup element NIET gevonden");
-  }
-}
+// OPSLAAN IN FAVORIETEN

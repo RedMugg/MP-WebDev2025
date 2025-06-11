@@ -1,3 +1,7 @@
+@media screen {
+  
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,11 +49,13 @@
 .oefeningSectie a:nth-of-type(2)::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  content: "\f02e";
-  /* fa-bell */
+  content: "\f02e"; 
   margin-left: 0.5rem;
 }
- 
+  
+
+
+
 /* top sectie */
 .topSectie {
   width: 100%;
@@ -243,9 +249,8 @@ height: fit-content;
   height: 100%;
   object-fit: cover;
 }
- 
-@media (max-width: 1200px) {
- 
+  
+@media (max-width: 1200px)  {
   /* Tablet-specifieke stijlen hier */
 
  
