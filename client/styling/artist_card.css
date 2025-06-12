@@ -44,6 +44,11 @@
     color: black;
 }
 
+:root[data-view="list"] .artList {
+padding-left: 2vw;
+
+}
+
 :root[data-view="list"] .artistCard {
     width: 100%;
     padding: 2px;
@@ -57,8 +62,8 @@
 }
 
 :root[data-view="list"] .artistCard img {
-    width: 22vw;
-    height: 22vw;
+    width: 10vw;
+    height: 10vw;
 
     border-right: 5px solid black;;
     object-fit: cover;
@@ -79,3 +84,10 @@
     padding: 5px;
 }
 
+@media (max-width: 850px) {
+    :root[data-view="list"] .artistCard img {
+        width: 22vw;
+        height: 22vw
+    }
+    
+}

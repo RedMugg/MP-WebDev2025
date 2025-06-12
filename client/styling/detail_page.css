@@ -59,11 +59,15 @@
 }
 
 .topSectie a,
-.textContainer a {
+.textContainer a,
+.printBtn {
   background-color: transparent;
   border: 1px solid #fff;
 }
 
+.printBtn {
+  align-self: flex-end;
+}
 
 .description {
   flex: 1;
