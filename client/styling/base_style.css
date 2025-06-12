@@ -3,7 +3,7 @@
     --colorPearlBlue: hsla(327, 97%, 70%, 1);
     --colorLavenderSheen: hsla(217, 85%, 76%, 1);
     --colorSoftMint: hsla(201, 87%, 65%, 1);
-    --colorHighlightWhite: hsla(30, 81%, 67%, 1);
+    --colorHighlightWhite: rgb(250, 232, 211);
     --colorAccesibilityBlock: hsl(205.8deg 100% 83.25%);
     --colorGlowShadow: hsla(169, 91%, 65%, 1);
     --colorBackgroundBlue: hsla(287, 74%, 66%, 1);

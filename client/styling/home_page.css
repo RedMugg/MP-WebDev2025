@@ -1,23 +1,27 @@
 .homePageMain {
-  display: grid;
-  grid-template-columns: 1fr 70% 1fr;
-
   height: 100%;
 }
 
+
+/* home page hero section*/
 .homePageTitle {
-  grid-column: 2;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
-  
+  height: 100vh;
   margin-bottom: 4em;
   padding-top: 3em;
+  width: 100%;
+
+
 }
 
 .homePageTitle p {
   font-size: 2vw;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 2em;
 }
 
 
@@ -68,11 +72,9 @@
 h1 {
   font-size: 18vw;
   font-weight: bold;
-
   margin-bottom: 0.5rem;
   margin-top: 0;
   margin: .2em;
-
   line-height: .7;
   letter-spacing: -1.5vw;
 }
@@ -121,6 +123,51 @@ h1 {
   transform: scale(1.2);
 }
 
+/* generative text */
+
+.generativeArt {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+
+}
+
+
+#refreshBtn {
+  margin-bottom: 2em;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  background:transparent;
+border: 1px solid var(--colorHighlightWhite);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#refreshBtn:hover {
+  background: var(--colorHighlightWhite);
+
+}
+
+#thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+canvas {
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 240px !important;
+  height: 240px !important;
+  border: 2px solid #000;
+}
+
+
 /* SITE UITLEG */
 
 .homePageSiteUitleg {
@@ -161,3 +208,7 @@ h1 {
 .homePageSiteUitlegList li a {
   color: blue !important;
 }
+
+
+
+
