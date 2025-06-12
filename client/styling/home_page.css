@@ -1,5 +1,11 @@
 .homePageMain {
   height: 100%;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
 }
 
 
@@ -9,18 +15,17 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  height: 100vh;
+  height: fit-content;
   margin-bottom: 4em;
   padding-top: 3em;
   width: 100%;
-
-
+  border-bottom: 1px  solid var(--colorPearlBlue);
 }
 
 .homePageTitle p {
   font-size: 2vw;
   text-align: center;
-  max-width: 400px;
+  max-width: 600px;
   margin-bottom: 2em;
 }
 
@@ -42,14 +47,14 @@
 }
 
 .homePageInfoSection {
-  grid-column: 2;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   margin: 0.5em 0;
   margin-bottom: 2em;
+  padding: 0 2rem;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .homePageInfoSection h3 {
@@ -58,12 +63,7 @@
   margin-bottom: 0.5em;
 }
 
-.homePageInfoSection p {
-  padding: 1em;
 
-  border: 1px solid var(--colorHighlightWhite);
-  border-radius: 1em;
-}
 
 .homePageInfo h2 {
   margin-bottom: 1em;
@@ -105,7 +105,6 @@ h1 {
 .homePageTitleText :nth-child(3) {
   display: flex;
   align-self: end;
-
   transform: rotate(8deg) scale(1);
   transition: transform 0.5s ease-in-out;
   top: -1em;
@@ -121,6 +120,12 @@ h1 {
 
 .homePageTitleText:hover :nth-child(3) {
   transform: scale(1.2);
+}
+
+@media (min-width: 1200px) {
+  .homePageTitle p {
+  max-width: 800px;
+}
 }
 
 /* generative text */
@@ -140,9 +145,8 @@ h1 {
   font-size: 18px;
   border-radius: 20px;
   border: none;
-  background:transparent;
+  background: var(--colorHighlightWhite);
 border: 1px solid var(--colorHighlightWhite);
-  color: #fff;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -164,7 +168,7 @@ canvas {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   width: 240px !important;
   height: 240px !important;
-  border: 2px solid #000;
+  border: 1px solid var(--colorPearlBlue);
 }
 
 
@@ -178,6 +182,10 @@ canvas {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+
+  padding: 0 2rem;
 }
 
 .homePageSiteUitlegList li {
@@ -206,7 +214,7 @@ canvas {
 }
 
 .homePageSiteUitlegList li a {
-  color: blue !important;
+  color: var(--colorHighlightWhite);
 }
 
 
