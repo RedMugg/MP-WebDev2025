@@ -1,7 +1,7 @@
 let convertedList = [];
 
 const currentURL = window.location.href;
-const currentID = currentURL.replace("http://localhost:3000/detail_pagina/", "");
+const currentID = currentURL.replace("https://mp-webdev2025.onrender.com/detail_pagina/", "");
 console.log(currentID);
 let dataFilter = [];
 
