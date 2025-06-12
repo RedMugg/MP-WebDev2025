@@ -4,30 +4,33 @@
   padding: 0;
 }
 
+html, body,main {
+  width: 297mm;
+  height: 210mm;
+  overflow: hidden;
+  position: relative;
+}
+
 /* Hide elements that shouldn't be printed */
 header,
 footer,
 nav,
 button,
+.open-btn,
 .printBtn,
-.oefeningSectie,
-.tweedeContainer,
-.imageContainerMainArt,
+.threeImageContainer,
+.artImageE1spot,
+.artImageE2spot,
+.artImageE3spot
+.textcontainer:nth-of-type(2),
 a,
-h2,
 #gradient,
-#texture {
+#texture,
+.artSection > .textcontainer > h2
+{
   display: none;
 }
 
-.topSectie {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2cm;
-}
-
-/* Dashed line in the middle */
 body::before {
   content: "";
   position: fixed;
@@ -38,21 +41,7 @@ body::before {
   border-left: 1px dashed #999;
   z-index: 9999;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 50vw;
-  width: 0;
-  height: 100vh;
-  border-left: 1px dashed #999;
-  z-index: 9999;
-}
-
-
-
-
+ 
 html,
 body,
 main,
@@ -63,34 +52,27 @@ main,
   max-height: none;
 }
 
-body {
-  background: white;
+.artSection > .textcontainer > p{
   color: black;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-  font-size: 12pt;
-  line-height: .5;
+  position: absolute;
+  left: 148.5mm;
+  top: -17cm;
+  width: 148.5mm;
+  height: 0mm;
+  padding: 1.5cm;
+  box-sizing: border-box;
+  z-index: 100;
+  font-size: 10pt;
 }
 
-.naamKunst,
-.naamKunstenaar,
-.hoofdKunstwerk,
-.beschrijving,
-.beschrijvingKunstwerk,
-p {
-  display: block;
-  visibility: visible;
+.artSection{
+  border-top: none;
 }
 
-h1,
-p,
-img {
-  page-break-inside: avoid;
-}
-
-
-.naamKunst {
+.artTitle {
   font-size: 60pt;
   line-height: 1;
+  margin: 1cm;
   print-color-adjust: exact;
   color: white;
   letter-spacing: normal;
@@ -102,44 +84,24 @@ img {
   text-shadow: 2pt 2pt  black;
 }
 
-.naamKunstenaar {
+.artist {
   font-size: 30pt;
   color: black;
   text-align: left;
+  margin: 1cm;
 
   position: absolute;
   left: 4%;
   bottom: 5%;
   width: 30%;
-  text-shadow: 2pt 2pt  white;
 }
 
-.beschrijving {
-  text-align: left;
-}
-
-.hoofdKunstwerk {
-  z-index: -1;
+.artImage{
   position: absolute;
   left: 0;
   top: 0;
-  width: 50%;
-  height: 100%;
+  width: 148.5mm;
+  height: 210mm;
   object-fit: cover;
-  border-radius: 0%;
+  border-radius: 0;
 }
-
-p {
-  font-size: 10pt;
-  margin: 0;
-  color: black;
-  line-height: 1.4;
-
-
-  position: absolute;
-  left: 55%;
-  top: 5%;
-  width: 30%;
-  z-index: 100;
-}
-

@@ -3,7 +3,7 @@
     --colorPearlBlue: hsla(327, 97%, 70%, 1);
     --colorLavenderSheen: hsla(217, 85%, 76%, 1);
     --colorSoftMint: hsla(201, 87%, 65%, 1);
-    --colorHighlightWhite: hsla(30, 81%, 67%, 1);
+    --colorHighlightWhite: rgb(250, 232, 211);
     --colorAccesibilityBlock: hsl(205.8deg 100% 83.25%);
     --colorGlowShadow: hsla(169, 91%, 65%, 1);
     --colorBackgroundBlue: hsla(287, 74%, 66%, 1);
@@ -89,7 +89,6 @@ footer {
     align-items: center;
 
     padding-top: 3em;
-
     background-color: var(--colorHighlightWhite);
 }
 
@@ -187,7 +186,12 @@ button {
 
 .layoutRadioLabel {
     background-color: var(--colorHighlightWhite);
-    padding: 0.5em;
+    text-align: center;
+    font-weight: 100;
+
+    margin-block: auto;
+    padding-block: .5em;
+    transition: .1s;
 }
 
 .layoutRadioLabel:first-of-type {
@@ -203,7 +207,6 @@ button {
     border-right: 1px solid white;
 
     border-radius: 0 2dvh 2dvh 0;
-    
 }
 
 .layoutRadioLabel:hover {
