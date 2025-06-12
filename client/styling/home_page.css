@@ -6,6 +6,7 @@
 
 /* home page hero section*/
 .homePageTitle {
+  grid-column: 2;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -41,6 +42,7 @@
 }
 
 .homePageInfoSection {
+  grid-column: 2;
   display: flex;
   justify-content: center;
   flex-direction: column;
