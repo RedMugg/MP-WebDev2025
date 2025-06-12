@@ -71,11 +71,11 @@ body {
   line-height: .5;
 }
 
-.naamKunst,
-.naamKunstenaar,
-.hoofdKunstwerk,
-.beschrijving,
-.beschrijvingKunstwerk,
+.artTitle,
+.artist,
+.artImage,
+.description,
+.artDescription,
 p {
   display: block;
   visibility: visible;
@@ -88,7 +88,7 @@ img {
 }
 
 
-.naamKunst {
+.artTitle {
   font-size: 60pt;
   line-height: 1;
   print-color-adjust: exact;
@@ -102,7 +102,7 @@ img {
   text-shadow: 2pt 2pt  black;
 }
 
-.naamKunstenaar {
+.artist {
   font-size: 30pt;
   color: black;
   text-align: left;
@@ -114,11 +114,11 @@ img {
   text-shadow: 2pt 2pt  white;
 }
 
-.beschrijving {
+.description {
   text-align: left;
 }
 
-.hoofdKunstwerk {
+.artImage {
   z-index: -1;
   position: absolute;
   left: 0;
