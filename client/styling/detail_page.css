@@ -3,34 +3,34 @@
   margin: 0;
   padding: 0;
 }
- 
+
 .detailPage {
   display: flex;
   flex-direction: column;
   gap: 3em;
   width: 100%;
 }
- 
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
 }
- 
+
 /*  oefening sectie */
- 
+
 .oefeningSectie {
   display: flex;
   justify-content: start;
   width: 80vw;
   top: 0;
   padding: 1rem;
- 
+
 }
- 
- 
+
+
 .oefeningSectie a::after {
   font-family: "Font Awesome 6 Free";
   /* of "Font Awesome 5 Free" voor oudere versies */
@@ -40,8 +40,8 @@
   /* Unicode voor bv. fa-user */
   margin-left: 0.5rem;
 }
- 
- 
+
+
 .oefeningSectie a:nth-of-type(2)::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -49,22 +49,23 @@
   /* fa-bell */
   margin-left: 0.5rem;
 }
- 
+
 /* top sectie */
 .topSectie {
   width: 100%;
   height: 80vh;
   display: flex;
- 
+
 }
- 
-.topSectie a, .textContainer a {
+
+.topSectie a,
+.textContainer a {
   background-color: transparent;
   border: 1px solid #fff;
 }
- 
- 
-.beschrijving {
+
+
+.description {
   flex: 1;
   height: 100%;
   display: flex;
@@ -74,42 +75,44 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
- 
+
 }
- 
-.beschrijving h1 {
+
+.description h1 {
   font-size: 60px;
   line-height: 1;
 }
- 
-.beschrijving h2 {
+
+.description h2 {
   font-weight: 100;
-font-size: 1rem;
-font-size: 16px;
+  font-size: 1rem;
+  font-size: 16px;
 }
- 
-.beschrijving p {
+
+.description p {
   line-height: 1.8;
 }
- 
- 
-.detailPage h1, .detailPage h2, .detailPage p {
+
+
+.detailPage h1,
+.detailPage h2,
+.detailPage p {
   text-align: center;
 }
- 
+
 /* Afbeelding */
-.hoofdKunstwerk {
+.artImage {
   width: 50%;
   height: 100%;
   object-fit: cover;
 }
- 
-.naamKunstenaar {
+
+.artist {
   font-size: 40px;
   color: var(--colorSunsetOrange);
 }
- 
-.naamKunst {
+
+.artTitle {
   font-size: 90px;
   font-family: 'Atkinson Hyperlegible Bold Italic', sans-serif;
   color: black;
@@ -118,29 +121,27 @@ font-size: 16px;
   letter-spacing: -5px;
   margin-left: 0;
 }
- 
- 
+
+
 /* Kunstwerk sectie */
 /* Tekst opmaak */
-.kunstwerkSectie {
+.artSection {
   backdrop-filter: blur(20px);
   display: flex;
-height: fit-content;
+  height: fit-content;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
   border: 2px solid var(--colorBubbleBlue);
   padding: 10px;
   border-top: 1px solid white;
-align-items: center;
-padding-bottom: 100px;
- 
+  align-items: center;
+  padding-bottom: 100px;
+
 }
- 
- 
- 
+
 .textContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -148,66 +149,69 @@ padding-bottom: 100px;
   flex-direction: column;
   gap: 3em;
   border-radius: 15px;
- 
+
 }
- 
+
 .threeImageContainer {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
   gap: 1rem;
 }
- 
- 
+
+
 .threeImageContainer img {
   width: 30%;
   height: 300px;
   object-fit: cover;
 }
- 
-    @media (max-width: 600px) {
-    .textContainer {
-      justify-content: start;
-    }
+
+@media (max-width: 600px) {
+  .textContainer {
+    justify-content: start;
+  }
+
   .threeImageContainer {
-  flex-direction: column;
-}
- 
+    flex-direction: column;
+  }
+
   .topSectie {
     align-items: center;
-   flex-direction: column;
-   justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
- 
-  .hoofdKunstwerk {
+
+  .artImage {
     width: 100%;
     opacity: 50%;
   }
- 
-  .beschrijving {
+
+  .description {
     position: absolute;
   }
- 
- 
-  
- 
-.threeImageContainer img {
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  object-fit: cover;
- 
+
+
+
+
+  .threeImageContainer img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+
+  }
+
+
+
+
 }
- 
- 
- 
- 
-}
- 
+
 .tweedeContainer {
   /* background-color: var(--PlasmaRose); */
   background-color: var(--colorSunsetOrange);
 }
- 
+
 .textContainer p {
   font-size: 1.2rem;
   /* background-color: var(--colorTurquoiseWave); */
@@ -215,128 +219,128 @@ padding-bottom: 100px;
   line-height: 30px;
   text-align: left;
 }
- 
+
 .detailPage a {
- 
+
   padding: 1em;
- 
+
   border-radius: 2em;
   width: fit-content;
 }
- 
+
 .textContainer h2 {
   font-size: 2.5rem;
   color: #0c0c0c;
   text-align: left;
 }
- 
- 
+
+
 .imageContainerMainArt {
   width: 100%;
   height: 100%;
   border-radius: 15px;
 }
- 
+
 .imageContainerMainArt img {
   border-radius: 15px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
+
 @media (max-width: 1200px) {
- 
+
   /* Tablet-specifieke stijlen hier */
- 
- 
+
+
   .detailPage p {
     font-size: 16px;
   }
 }
- 
- 
-    .open-btn {
-      display: block;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: transparent;
-      border: 1px solid white;
-      border-radius: 50px;
-    }
- 
-    /* Pop-up achtergrond */
-    .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background-color: rgba(0, 0, 0, 0.6);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
- 
-    /* Pop-up venster */
-    .popup-content {
-      background: rgb(8, 8, 41);
-      padding: 30px;
-      border-radius: 12px;
-      position: relative;
-      width: 90%;
-      max-width: 800px;
-      max-height: 90vh;
-      overflow-y: auto;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-    }
- 
-    /* Sluitknop */
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
- 
-     .popup-content h2 {
-        font-size: 30px;
-        text-align: left;
-        margin-bottom: 1em;
-        }
- 
-    .popup-content p {
-      text-align: left;
-      line-height: 1.5;
-      
-    }
- 
-    article h1, article h2 {
-      margin-top: 1.5em;
-    }
- 
-    blockquote {
-      margin: 1em 0;
-      padding-left: 1em;
-      border-left: 4px solid #aaa;
-      font-style: italic;
-    }
- 
- 
- 
-    .popup-content li {
-      list-style-type: decimal;
-    }
- 
-    @media (max-height: 500px) {
-      .popup-content {
-        padding: 15px;
-      }
-    }
- 
- 
- 
+
+
+.open-btn {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+/* Pop-up achtergrond */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Pop-up venster */
+.popup-content {
+  background: rgb(8, 8, 41);
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Sluitknop */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.popup-content h2 {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.popup-content p {
+  text-align: left;
+  line-height: 1.5;
+
+}
+
+article h1,
+article h2 {
+  margin-top: 1.5em;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid #aaa;
+  font-style: italic;
+}
+
+
+
+.popup-content li {
+  list-style-type: decimal;
+}
+
+@media (max-height: 500px) {
+  .popup-content {
+    padding: 15px;
+  }
+}
