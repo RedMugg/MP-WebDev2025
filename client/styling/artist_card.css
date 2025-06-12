@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
+    padding-top: 2em;
 }
 
 .artistCard {
@@ -55,8 +57,8 @@
 }
 
 :root[data-view="list"] .artistCard img {
-    width: 6rem;
-    height: 6rem;
+    width: 22vw;
+    height: 22vw;
 
     border-right: 5px solid black;;
     object-fit: cover;
