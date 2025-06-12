@@ -68,8 +68,6 @@ main,
   border-top: none;
 }
 
-
-
 .artTitle {
   font-size: 60pt;
   line-height: 1;
@@ -84,7 +82,6 @@ main,
   text-shadow: 2pt 2pt  black;
 }
 
-
 .artist {
   font-size: 30pt;
   color: black;
@@ -94,9 +91,7 @@ main,
   left: 4%;
   bottom: 5%;
   width: 30%;
-
 }
-
 
 .artImage{
   position: absolute;
