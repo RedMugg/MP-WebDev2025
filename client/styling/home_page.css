@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 70% 1fr;
 
-  height: 100%;
 }
 
 .homePageTitle {

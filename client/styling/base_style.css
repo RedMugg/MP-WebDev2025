@@ -43,6 +43,10 @@
     interpolate-size: allow-keywords;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 section>h1 {
     font-size: 15rem;
     color: rgb(255, 255, 255);
@@ -63,10 +67,6 @@ div>h2 {
 }
 
 body {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 95vw;
-
     width: 100%;
     height: auto;
     overflow: auto;
@@ -88,7 +88,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 4em;
     padding-top: 3em;
 
     background-color: var(--colorHighlightWhite);
@@ -173,7 +172,7 @@ button {
     justify-content: center;
     align-items: center;
 
-    margin: .7em;
+    margin: 0em .25em;
 
     background-color: var(--colorHighlightWhite);
     border-radius: 2dvh;
@@ -214,7 +213,6 @@ button {
 .layoutRadioLabel input[type="radio"]:checked {
     background-color: var(--colorSoftMint);
     color: white;
-    font-weight: 700;
 }
 
 
@@ -251,7 +249,10 @@ input[type="checkbox"] {
     width: 100%;
     height: auto;
 
-    padding: 0.3em 2vw;
+    padding: 1em .4em;
+    padding-left: 4.3em;
+
+    border-bottom: 1px solid white;
 
     z-index: 10;
 }
@@ -261,7 +262,7 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
 
-    margin: .7em;
+    margin: 0em .25em;
     padding: .5em;
     background-color: var(--colorHighlightWhite);
 
