@@ -7,6 +7,15 @@
     <div id="backgroundTexture"></div>
 
     <section class="overviewFilterSelects">
+        <div class="overviewLayoutSwitch">
+            <label class="layoutRadioLabel">⊞
+                <input class="viewRadios" type="radio" id="thumbnail" name="viewRadios" value="thumbnail" checked="true">
+            </label>
+            <label class="layoutRadioLabel">☰
+                <input class="viewRadios" type="radio" id="list" name="viewRadios" value="list">
+            </label>
+        </div>
+
         <select id="sortDropdown" class="sortDropdown">
             <option value="artist-asc">Artiest A-Z</option>
             <option value="artist-desc">Artiest Z-A</option>
@@ -21,10 +30,6 @@
             <option value="text">Text</option>
           </select>
 
-          <input class="viewRadios" type="radio" id="thumbnail" name="viewRadios" value="thumbnail" checked="true">
-          <label for="thumbnail">Thumbnail</label>
-          <input class="viewRadios" type="radio" id="list" name="viewRadios" value="list">
-          <label for="list">List</label>
     </section>
 
         <section>

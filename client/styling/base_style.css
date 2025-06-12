@@ -43,6 +43,10 @@
     interpolate-size: allow-keywords;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 section>h1 {
     font-size: 15rem;
     color: rgb(255, 255, 255);
@@ -63,10 +67,6 @@ div>h2 {
 }
 
 body {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 95vw;
-
     width: 100%;
     height: auto;
     overflow: auto;
@@ -75,12 +75,12 @@ body {
     padding: 0;
 
     background: radial-gradient(ellipse at center,
-            var(--colorPearlPink) 0%,
-            var(--colorPearlBlue) 25%,
-            var(--colorLavenderSheen) 50%,
-            var(--colorSoftMint) 75%,
-            var(--colorHighlightWhite) 90%,
-            var(--colorGlowShadow) 100%);
+        var(--colorPearlPink) 0%,
+        var(--colorPearlBlue) 25%,
+        var(--colorLavenderSheen) 50%,
+        var(--colorSoftMint) 75%,
+        var(--colorHighlightWhite) 90%,
+        var(--colorGlowShadow) 100%);
 }
 
 footer {
@@ -88,8 +88,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-
-
+    padding-top: 3em;
     background-color: var(--colorHighlightWhite);
 }
 
@@ -167,15 +166,25 @@ button {
 
 /* RADIO STYLING */
 
+.overviewLayoutSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0em .25em;
+
+    background-color: var(--colorHighlightWhite);
+    border-radius: 2dvh;
+    border: 1px solid white;
+}
+
 .viewRadios {
     appearance: none;
     margin: 0;
     border: 0;
 }
 
-.viewRadios+label {
-    width: 10%;
-    display: inline-block;
+.layoutRadioLabel {
     background-color: var(--colorHighlightWhite);
     text-align: center;
     font-weight: 100;
@@ -183,30 +192,34 @@ button {
     margin-block: auto;
     padding-block: .5em;
     transition: .1s;
-
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: white;
-
 }
 
-.viewRadios+label:first-of-type {
-border-radius: 2dvh 0 0 2dvh;
+.layoutRadioLabel:first-of-type {
+    background-color: var(--colorHighlightWhite);
+    border-right: 1px solid white;
+
+    border-radius: 2dvh 0 0 2dvh;
+    
 }
 
-.viewRadios+label:last-of-type {
-border-radius: 0 2dvh 2dvh 0;
+.layoutRadioLabel:nth-of-type(2) {
+    background-color: var(--colorHighlightWhite);
+    border-right: 1px solid white;
+
+    border-radius: 0 2dvh 2dvh 0;
 }
 
-.viewRadios+label:hover {
+.layoutRadioLabel:hover {
     background-color: var(--colorSoftMint);
 }
 
-.viewRadios:checked+label {
+.layoutRadioLabel input[type="radio"]:checked {
     background-color: var(--colorSoftMint);
     color: white;
-    font-weight: 700;
 }
+
+
+
 
 .headerAccessibilityMenu input[type="radio"] {
     appearance: auto;
@@ -234,11 +247,15 @@ input[type="checkbox"] {
 /* SORT DROPDOWN */
 .overviewFilterSelects {
     display: flex;
-    position: fixed;
+    flex-wrap: wrap;
 
     width: 100%;
+    height: auto;
 
-    padding: 0.3em 5em;
+    padding: 1em .4em;
+    padding-left: 4.3em;
+
+    border-bottom: 1px solid white;
 
     z-index: 10;
 }
@@ -248,9 +265,11 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
 
-    margin: .7em;
+    margin: 0em .25em;
     padding: .5em;
     background-color: var(--colorHighlightWhite);
+
+    border: 1px solid white;
 
     border-radius: 2dvh;
     font-size: 0.9em;
