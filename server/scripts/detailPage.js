@@ -32,7 +32,7 @@ let dataFilter = [];
 
 // Fetch de artist lijst van de JSON file
 function fetchArtists() {
-    fetch('http://aiaiai.art/wp-json/wp/v2/pages/' + currentID + "?_fields=author,id,excerpt,title,link,content")
+    fetch('https://aiaiai.art/wp-json/wp/v2/pages/' + currentID + "?_fields=author,id,excerpt,title,link,content")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
