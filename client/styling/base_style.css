@@ -75,12 +75,12 @@ body {
     padding: 0;
 
     background: radial-gradient(ellipse at center,
-            var(--colorPearlPink) 0%,
-            var(--colorPearlBlue) 25%,
-            var(--colorLavenderSheen) 50%,
-            var(--colorSoftMint) 75%,
-            var(--colorHighlightWhite) 90%,
-            var(--colorGlowShadow) 100%);
+        var(--colorPearlPink) 0%,
+        var(--colorPearlBlue) 25%,
+        var(--colorLavenderSheen) 50%,
+        var(--colorSoftMint) 75%,
+        var(--colorHighlightWhite) 90%,
+        var(--colorGlowShadow) 100%);
 }
 
 footer {
@@ -168,46 +168,57 @@ button {
 
 /* RADIO STYLING */
 
+.overviewLayoutSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: .7em;
+
+    background-color: var(--colorHighlightWhite);
+    border-radius: 2dvh;
+    border: 1px solid white;
+}
+
 .viewRadios {
     appearance: none;
     margin: 0;
     border: 0;
 }
 
-.viewRadios+label {
-    width: 10%;
-    display: inline-block;
+.layoutRadioLabel {
     background-color: var(--colorHighlightWhite);
-    text-align: center;
-    font-weight: 100;
-
-    margin-block: auto;
-    padding-block: 10px;
-    transition: .1s;
-
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: white;
-
+    padding: 0.5em;
 }
 
-.viewRadios+label:first-of-type {
-border-radius: 10px 0 0 10px;
+.layoutRadioLabel:first-of-type {
+    background-color: var(--colorHighlightWhite);
+    border-right: 1px solid white;
+
+    border-radius: 2dvh 0 0 2dvh;
+    
 }
 
-.viewRadios+label:last-of-type {
-border-radius: 0 10px 10px 0;
+.layoutRadioLabel:nth-of-type(2) {
+    background-color: var(--colorHighlightWhite);
+    border-right: 1px solid white;
+
+    border-radius: 0 2dvh 2dvh 0;
+    
 }
 
-.viewRadios+label:hover {
+.layoutRadioLabel:hover {
     background-color: var(--colorSoftMint);
 }
 
-.viewRadios:checked+label {
+.layoutRadioLabel input[type="radio"]:checked {
     background-color: var(--colorSoftMint);
     color: white;
     font-weight: 700;
 }
+
+
+
 
 .headerAccessibilityMenu input[type="radio"] {
     appearance: auto;
@@ -235,11 +246,12 @@ input[type="checkbox"] {
 /* SORT DROPDOWN */
 .overviewFilterSelects {
     display: flex;
-    position: fixed;
+    flex-wrap: wrap;
 
     width: 100%;
+    height: auto;
 
-    padding: 0.3em 5em;
+    padding: 0.3em 2vw;
 
     z-index: 10;
 }
@@ -252,6 +264,8 @@ input[type="checkbox"] {
     margin: .7em;
     padding: .5em;
     background-color: var(--colorHighlightWhite);
+
+    border: 1px solid white;
 
     border-radius: 2dvh;
     font-size: 0.9em;
